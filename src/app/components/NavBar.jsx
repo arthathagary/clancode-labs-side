@@ -23,7 +23,7 @@ const NavBar = () => {
         <button className='hidden md:flex bg-[#E6ECEE] py-3 px-6 rounded-3xl text-xl'><span>Contact us</span><span><FaArrowRight className='inline-flex items-center ml-3 justify-center'/></span></button>
 
         {/* {Hamburger Button} */}
-        <div onClick={handleHamClick} className='z-10 md:hidden'>
+        <div onClick={handleHamClick} className='z-10 md:hidden cursor-pointer'>
         {!nav?<FaBars/>:<FaTimes/>}
         </div>
 
