@@ -1,4 +1,5 @@
 import React from 'react'
+import { IoCheckmarkCircleOutline } from "react-icons/io5";
 
 const StoriesToProductSection = () => {
   return (
@@ -9,17 +10,21 @@ const StoriesToProductSection = () => {
     </div>
 
     <div className='md:w-[50%]'>
-        <h1 className='bg-[#FFFFFF] inline-block px-4 py-2 rounded-full mb-16'>Stories to Product</h1>
-        <h1>We're all about converting user journeys to product.</h1>
-        <p>As our engineering team work with you on bringing your idea to life, we help you understand your customers even better. We gather continuous feedback in our development process and help align the product to better solve your customers' pain points. As a technical partner, we help in choosing the right technology to solve the problem and go to market as fast as possible.</p>
-        <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700"/>
+        <h2 className='bg-[#FFFFFF] inline-block px-4 py-2 rounded-full mb-8'>Stories to Product</h2>
+        <h1 className='text-5xl font-bold text-[#004450] mb-8'>We're all about converting user journeys to product.</h1>
+        <p className='text-[#004450]'>As our engineering team work with you on bringing your idea to life, we help you understand your customers even better. We gather continuous feedback in our development process and help align the product to better solve your customers' pain points. As a technical partner, we help in choosing the right technology to solve the problem and go to market as fast as possible.</p>
+        <hr className="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700"/>
 
-       <ul>
-            <li>High fidelity protopypes</li>
-            <li>Mobile and web development</li>
-            <li>Cloud & Devops</li>
-            <li>Agile delivery management</li>
-        </ul>
+       
+            <div className='md:flex mb-4 gap-4'>
+            <div className='inline-flex  items-baseline  gap-2 w-[50%]'><span><IoCheckmarkCircleOutline/></span><span className='text-xl font-medium'>High fidelity protopypes</span></div>
+            <div className='inline-flex  items-baseline gap-2 w-[50%]'><span><IoCheckmarkCircleOutline/></span><span className='text-xl font-medium'>Mobile and web development</span></div>
+            </div>
+            <div className='md:flex mb-4 gap-4'>
+            <div className='inline-flex  items-center gap-2 w-[50%]'><span><IoCheckmarkCircleOutline/></span><span className='text-xl font-medium'>Cloud & Devops</span></div>
+            <div className='inline-flex  items-center gap-2 w-[50%]'><span><IoCheckmarkCircleOutline/></span><span className='text-xl font-medium'>Agile delivery management</span></div>
+            </div>
+       
     </div>
     </div>
   )

@@ -4,6 +4,7 @@ import HeroSection from '../components/HeroSection'
 import AboutPage from './AboutPage'
 import IdeasToStorySection from '../components/IdeasToStorySection'
 import StoriesToProductSection from '../components/StoriesToProductSection'
+import OnboardingSection from '../components/OnboardingSection'
 
 
 const LandingPage = () => {
@@ -14,6 +15,7 @@ const LandingPage = () => {
         <AboutPage />
         <IdeasToStorySection />
         <StoriesToProductSection />
+        <OnboardingSection />
     </div>
   )
 }

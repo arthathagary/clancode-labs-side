@@ -9,19 +9,19 @@ const AboutCard = () => {
     <div className='bg-[#B0E4F5] p-10'>
     <AiOutlineRise size={60} />
     <h2 className='text-2xl font-semibold my-6'>High Performance Team</h2>
-    <p>Successful products are the outcome of a great team. We help you develop your ideas through a high-performance team focused on quality and outcome over output.</p>
+    <p className='text-[#45535F]'>Successful products are the outcome of a great team. We help you develop your ideas through a high-performance team focused on quality and outcome over output.</p>
     </div>
 
     <div className='bg-[#FDEAE7] p-10'>
     <FaUserGroup size={60}/>
     <h2 className='text-2xl font-semibold my-6'>Collaboration</h2>
-    <p>Successful products are the outcome of a great team. We help you develop your ideas through a high-performance team focused on quality and outcome over output.</p>
+    <p className='text-[#45535F]'>Successful products are the outcome of a great team. We help you develop your ideas through a high-performance team focused on quality and outcome over output.</p>
     </div>
 
     <div className='bg-[#D8ECC5] p-10'>
     <ImLoop2 size={60}/>
     <h2 className='text-2xl font-semibold my-6'>Continuous Learning</h2>
-    <p>Successful products are the outcome of a great team. We help you develop your ideas through a high-performance team focused on quality and outcome over output.</p>
+    <p className='text-[#45535F]'>Successful products are the outcome of a great team. We help you develop your ideas through a high-performance team focused on quality and outcome over output.</p>
     </div>
     </div>
   )
