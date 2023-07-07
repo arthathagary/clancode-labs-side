@@ -15,7 +15,7 @@ const NavBar = () => {
             <ul className='hidden md:flex'>
                 <li className='text-xl'>Home</li>
                 <a href='#aboutpage'><li className='text-xl'>About</li></a>
-                <li className='text-xl'>Services</li>
+                <a href='#services'><li className='text-xl'>Services</li></a>
                 <li className='text-xl'>Careers</li>
                 <li className='text-xl'>Blog</li>
             </ul>

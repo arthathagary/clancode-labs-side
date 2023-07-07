@@ -1,11 +1,11 @@
 import React from 'react'
 
-const OnbordingCard = () => {
+const OnbordingCard = (props) => {
   return (
     <div>
         <hr />
-        <h3 className='flex items-center gap-2'><span className='text-3xl'>01</span><span>Discovery</span></h3>
-        <p>We want to learn about your product and idea. Understand the problem you are solving and the challenges in solving the problem. Together, we will identify areas and challenges we want to work on together.</p>
+        <h3 className='flex items-center gap-2 font-semibold my-6'><span className='text-5xl text-[#45C1CE]'>{props.num}</span><span>{props.title}</span></h3>
+        <p className='mb-6'>{props.text}</p>
     </div>
   )
 }

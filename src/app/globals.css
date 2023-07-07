@@ -9,6 +9,7 @@
   }
   p{
     @apply text-xl;
+    @apply text-[#45535F];
   }
 }
 
