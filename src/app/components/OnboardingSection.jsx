@@ -5,7 +5,7 @@ import onBoardingContent from '../assets/contents/onboarding'
 const OnboardingSection = () => {
   return (
     <div className='md:h-[100vh] w-full md:px-32 px-8 mt-8'>
-    <h1 className='text-5xl text-center mb-8  md:mt-0 font-semibold text-[#004450]'>Our onboarding process</h1>
+    <h2 className='text-center'>Our onboarding process</h2>
     <div className=' md:flex items-center justify-center gap-8'>
     <div>
     <OnbordingCard  num={onBoardingContent[0].num} title={onBoardingContent[0].title} text={onBoardingContent[0].text} />

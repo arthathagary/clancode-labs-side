@@ -11,6 +11,12 @@
     @apply text-xl;
     @apply text-[#45535F];
   }
+  h1{
+    @apply md:text-7xl text-5xl font-bold text-[#004450] leading-tight;
+  }
+  h2{
+    @apply md:text-5xl text-3xl mb-16 mt-8 md:mt-0 font-semibold text-[#004450]
+  }
 }
 
 :root {

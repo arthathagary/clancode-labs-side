@@ -6,6 +6,9 @@ import IdeasToStorySection from '../components/IdeasToStorySection'
 import StoriesToProductSection from '../components/StoriesToProductSection'
 import OnboardingSection from '../components/OnboardingSection'
 import ServicesPage from './ServicesPage'
+import QaSection from '../components/QaSection'
+import GetStartedSection from '../components/GetStartedSection'
+import Footer from './Footer'
 
 
 const LandingPage = () => {
@@ -18,6 +21,9 @@ const LandingPage = () => {
         <StoriesToProductSection />
         <OnboardingSection />
         <ServicesPage />
+        <QaSection />
+        <GetStartedSection />
+        <Footer />
     </div>
   )
 }
