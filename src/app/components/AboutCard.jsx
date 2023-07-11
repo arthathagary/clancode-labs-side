@@ -5,7 +5,7 @@ import { ImLoop2 } from "react-icons/im";
 
 const AboutCard = () => {
   return (
-    <div className='md:flex gap-8'>
+    <div className='md:flex gap-8 mb-8 md:mb-0'>
     <div className='bg-[#B0E4F5] p-10'>
     <AiOutlineRise size={60} />
     <h3 className='text-2xl font-semibold my-6'>High Performance Team</h3>

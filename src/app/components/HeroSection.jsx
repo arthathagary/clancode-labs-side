@@ -2,7 +2,7 @@ import React from 'react'
 import {FaArrowRight} from 'react-icons/fa'
 const HeroSection = () => {
   return (
-    <div className='md:flex bg-[#DAF3F4] md:h-[90vh] w-full md:px-32 px-8'>
+    <div className='md:flex bg-[#DAF3F4] md:h-[90vh] w-full md:px-32 px-8 py-6 md:py-0'>
     <div className='md:h-screen flex flex-col justify-center'>
         <h1>Build faster,</h1>
         <h1>together</h1>

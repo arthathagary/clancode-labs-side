@@ -5,14 +5,14 @@ import { FaAngular,FaReact,FaNodeJs } from "react-icons/fa";
 
 const ServicesPage = () => {
   return (
-    <div id='services' className='md:h-[100vh] w-full md:px-32 px-8 md:flex items-center  bg-[#DAF3F4] gap-4'>
+    <div id='services' className='md:h-[100vh] w-full md:px-32 px-8 md:flex items-center  bg-[#DAF3F4] gap-4 py-6 md:py-0'>
     <div className='flex flex-col gap-4'>
       <h4 className='bg-[#004450] p-8 text-xl font-bold text-[white]'><GoStack/>Full stack<br/>Development</h4>
       <h4 className='bg-[#004450] p-8 text-xl font-bold text-[white]'><GoStack/>Full stack<br/>Development</h4>
       <h4 className='bg-[#004450] p-8 text-xl font-bold text-[white]'><GoStack/>Full stack<br/>Development</h4>
     </div>
 
-    <div>
+    <div className='my-6 md:my-0'>
       <h1>image</h1>
     </div>
 
