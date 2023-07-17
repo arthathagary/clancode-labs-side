@@ -1,5 +1,7 @@
 import React from 'react'
 import {FaArrowRight} from 'react-icons/fa'
+import Image from 'next/image'
+import HeroImg from '../../../public/assets/images/heroImg.png'
 const HeroSection = () => {
   return (
     <div className='md:flex bg-[#DAF3F4] md:h-[90vh] w-full md:px-32 px-8 py-6 md:py-0'>
@@ -11,8 +13,8 @@ const HeroSection = () => {
     </div>
 
     {/* {hero image section} */}
-    <div>
-
+    <div className='md:w-[50%] hidden md:flex md:flex-col justify-center'>
+        <Image src={HeroImg} />
     </div>
     </div>
   )

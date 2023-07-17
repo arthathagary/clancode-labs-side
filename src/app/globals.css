@@ -4,7 +4,7 @@
 
 @layer base {
   li{
-    @apply px-4;
+    @apply px-3;
     @apply cursor-pointer;
   }
   p{
