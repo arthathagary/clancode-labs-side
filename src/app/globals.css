@@ -12,7 +12,7 @@
     @apply text-[#45535F];
   }
   h1{
-    @apply md:text-7xl text-5xl font-bold text-[#004450] leading-tight;
+    @apply md:text-7xl text-5xl font-bold text-[#004450] leading-loose;
   }
   h2{
     @apply md:text-5xl text-3xl md:mb-16 mb-8 mt-2 md:mt-0 font-semibold text-[#004450]

@@ -18,7 +18,7 @@ const LandingPage = () => {
         <NavBar />
         <HeroSection />
         <TrustedBySection />
-        <AboutPage />
+        {/* <AboutPage /> */}
         <IdeasToStorySection />
         <StoriesToProductSection />
         <OnboardingSection />

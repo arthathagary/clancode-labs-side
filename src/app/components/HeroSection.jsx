@@ -5,7 +5,7 @@ import HeroImg from '../../../public/assets/images/heroImg.png'
 const HeroSection = () => {
   return (
     <div className='md:flex bg-[#DAF3F4] md:h-[90vh] w-full md:px-32 px-8 py-6 md:py-0'>
-    <div className='md:h-screen flex flex-col justify-center'>
+    <div className='md:h-screen flex flex-col justify-center md:w-[50%]'>
         <h1>Expand,Grow and Elevate</h1>
         <h1>your tech team with us.</h1>
         <p className='text-2xl my-4'>We empowere numerous organizations to achieve business success through our expertise by engineering digital products.</p>
@@ -14,7 +14,7 @@ const HeroSection = () => {
 
     {/* {hero image section} */}
     <div className='md:w-[50%] hidden md:flex md:flex-col justify-center'>
-        <Image src={HeroImg} />
+        <Image src={HeroImg} alt='hero-img'/>
     </div>
     </div>
   )
