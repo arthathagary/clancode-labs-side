@@ -11,6 +11,7 @@ import GetStartedSection from '../components/GetStartedSection'
 import Footer from './Footer'
 import TrustedBySection from '../components/TrustedBySection'
 import ProductDevelpment from '../components/ProductDevelpment'
+import MvpSection from '../components/MvpSection'
 
 
 const LandingPage = () => {
@@ -20,6 +21,7 @@ const LandingPage = () => {
         <HeroSection />
         <TrustedBySection />
         <ProductDevelpment />
+        <MvpSection />
         {/* <AboutPage /> */}
         {/* <IdeasToStorySection /> */}
         {/* <StoriesToProductSection /> */}
