@@ -10,6 +10,7 @@ import QaSection from '../components/QaSection'
 import GetStartedSection from '../components/GetStartedSection'
 import Footer from './Footer'
 import TrustedBySection from '../components/TrustedBySection'
+import ProductDevelpment from '../components/ProductDevelpment'
 
 
 const LandingPage = () => {
@@ -18,13 +19,14 @@ const LandingPage = () => {
         <NavBar />
         <HeroSection />
         <TrustedBySection />
+        <ProductDevelpment />
         {/* <AboutPage /> */}
-        <IdeasToStorySection />
-        <StoriesToProductSection />
-        <OnboardingSection />
-        <ServicesPage />
-        <QaSection />
-        <GetStartedSection />
+        {/* <IdeasToStorySection /> */}
+        {/* <StoriesToProductSection /> */}
+        {/* <OnboardingSection /> */}
+        {/* <ServicesPage /> */}
+        {/* <QaSection /> */}
+        {/* <GetStartedSection /> */}
         <Footer />
     </div>
   )

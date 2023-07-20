@@ -10,7 +10,7 @@ const NavBar = () => {
   const handleHamClick = ()=>setNav(!nav)
   return (
     <nav className='flex justify-between w-full h-[80px] items-center md:px-32 px-8 '>
-        <div className='md:w-[260px] w-48'><Image src={Logo} objectFit='cover'/></div>
+        <div className='md:w-[260px] w-48'><Image src={Logo} objectFit='cover' alt='logo'/></div>
 
         {/* {Desktop Menus} */}
         
