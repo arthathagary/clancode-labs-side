@@ -5,15 +5,18 @@ import { FaAngular,FaReact,FaNodeJs } from "react-icons/fa";
 
 const ServicesPage = () => {
   return (
-    <div id='services' className='md:h-[100vh] w-full md:px-32 px-8 md:flex items-center  bg-[#DAF3F4] gap-4 py-6 md:py-0'>
-    <div className='flex flex-col gap-4'>
-      <h4 className='bg-[#004450] p-8 text-xl font-bold text-[white]'><GoStack/>Full stack<br/>Development</h4>
-      <h4 className='bg-[#004450] p-8 text-xl font-bold text-[white]'><GoStack/>Full stack<br/>Development</h4>
-      <h4 className='bg-[#004450] p-8 text-xl font-bold text-[white]'><GoStack/>Full stack<br/>Development</h4>
+    <div id='services' className='md:h-[70vh] w-full md:px-32 px-8 md:grid grid-cols-3 items-center  bg-[#DAF3F4] gap-4 py-6 md:py-0'>
+    <div className='flex flex-col gap-4 justify-self-start'>
+      <h4 className='bg-[#004450] px-6 py-4  font-bold text-[white]'>Software Development</h4>
+      <h4 className='bg-[#004450] px-6 py-4  font-bold text-[white]'>UI/UX Design</h4>
+      <h4 className='bg-[#004450] px-6 py-4  font-bold text-[white]'>Mobile App Development</h4>
+      <h4 className='bg-[#004450] px-6 py-4  font-bold text-[white]'>Artificial Intelligence</h4>
+      <button>Learn More</button>
+
     </div>
 
     <div className='my-6 md:my-0'>
-      <h1>image</h1>
+      <h2>Building nothing but the best custom software</h2>
     </div>
 
     <div>

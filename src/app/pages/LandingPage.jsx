@@ -26,7 +26,7 @@ const LandingPage = () => {
         {/* <IdeasToStorySection /> */}
         {/* <StoriesToProductSection /> */}
         {/* <OnboardingSection /> */}
-        {/* <ServicesPage /> */}
+        <ServicesPage />
         {/* <QaSection /> */}
         {/* <GetStartedSection /> */}
         <Footer />

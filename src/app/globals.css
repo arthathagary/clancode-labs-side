@@ -15,7 +15,8 @@
     @apply md:text-7xl text-4xl font-bold text-[#004450] md:leading-none leading-tight;
   }
   h2{
-    @apply md:text-5xl text-3xl md:mb-6 mb-8 mt-2 md:mt-0 font-semibold text-[#004450]
+    @apply md:text-5xl text-3xl md:mb-6 mb-8 mt-2 md:mt-0 font-semibold text-[#004450];
+    @apply leading-snug;
   }
 }
 
