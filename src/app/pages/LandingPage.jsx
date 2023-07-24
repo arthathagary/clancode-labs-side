@@ -27,8 +27,8 @@ const LandingPage = () => {
         {/* <StoriesToProductSection /> */}
         {/* <OnboardingSection /> */}
         <ServicesPage />
-        {/* <QaSection /> */}
-        {/* <GetStartedSection /> */}
+        <QaSection />
+        <GetStartedSection />
         <Footer />
     </div>
   )
