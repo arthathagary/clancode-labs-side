@@ -4,7 +4,7 @@ import Image from 'next/image'
 import HeroImg from '../../../public/assets/images/heroImg.png'
 const HeroSection = () => {
   return (
-    <div className='md:flex bg-[#DAF3F4] md:h-[90vh] w-full md:px-32 px-8 py-6 md:py-0'>
+    <div className='md:flex bg-[#DAF3F4] lg:h-[90vh] w-full md:px-32 px-8 py-6 md:py-0'>
     <div className='flex flex-col justify-center md:w-[50%]'>
         <h1>Expand,Grow and Elevate</h1>
         <h1>your tech team with us.</h1>
