@@ -10,6 +10,7 @@ const ServicesPage = () => {
   const initialHeading = 'Building nothing but the best custom software';
   const initialPara = 'some content about our custom software';
 
+  const [btnClick,setBtnClick] = useState(true);
   const [heading,setheading] = useState(initialHeading);
   const [para,setPara] = useState(initialPara);
   const [img,setImg] = useState(webAppProjectImg);
