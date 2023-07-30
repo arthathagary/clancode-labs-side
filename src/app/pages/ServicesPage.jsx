@@ -48,10 +48,10 @@ const ServicesPage = () => {
   return (
     <div id='services' className='md:h-[70vh] w-full md:px-32 px-8 md:grid grid-cols-3 items-center  bg-[#DAF3F4] gap-4 py-6 md:py-0'>
     <div className='flex flex-col gap-4 justify-self-start'>
-      <h4 id='sdBtn' className='bg-[#004450] px-6 py-4  font-bold text-[white] cursor-pointer' onClick={clickHandler}>Software Development</h4>
-      <h4 id='uiBtn' className='bg-[#004450] px-6 py-4  font-bold text-[white] cursor-pointer' onClick={clickHandler}>UI/UX Design</h4>
-      <h4 id='mdBtn' className='bg-[#004450] px-6 py-4  font-bold text-[white] cursor-pointer' onClick={clickHandler}>Mobile App Development</h4>
-      <h4 id='aiBtn' className='bg-[#004450] px-6 py-4  font-bold text-[white] cursor-pointer' onClick={clickHandler}>Artificial Intelligence</h4>
+      <h4 id='sdBtn' className='bg-[#004450] px-6 py-4  font-bold text-[white] cursor-pointer hover:bg-white hover:text-[#004450]' onClick={clickHandler}>Software Development</h4>
+      <h4 id='uiBtn' className='bg-[#004450] px-6 py-4  font-bold text-[white] cursor-pointer hover:bg-white hover:text-[#004450]' onClick={clickHandler}>UI/UX Design</h4>
+      <h4 id='mdBtn' className='bg-[#004450] px-6 py-4  font-bold text-[white] cursor-pointer hover:bg-white hover:text-[#004450]' onClick={clickHandler}>Mobile App Development</h4>
+      <h4 id='aiBtn' className='bg-[#004450] px-6 py-4  font-bold text-[white] cursor-pointer hover:bg-white hover:text-[#004450]' onClick={clickHandler}>Artificial Intelligence</h4>
       <button>Learn More</button>
 
     </div>
