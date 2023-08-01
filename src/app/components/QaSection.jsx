@@ -30,7 +30,7 @@ const QaSection = () => {
         
             <div>
             {generalQandA.map((gQandA,index)=>{
-              return <div key={gQandA.id}> <h5 className='flex items-center justify-between gap-4 font-extrabold mb-4' onClick={()=>handleClick(index)}><span>{gQandA.question}</span><span className='text-xl cursor-pointer'>{click===index?'-':'+'}</span></h5>
+              return <div key={gQandA.id}> <h5 className='flex items-center justify-between gap-4 font-extrabold mb-4' onClick={()=>handleClick(index)}><span className='cursor-pointer'>{gQandA.question}</span><span className='text-xl cursor-pointer'>{click===index?'-':'+'}</span></h5>
                 <h6 className={click === index ?'block':'hidden'}>{gQandA.answer}</h6> 
                 <hr className="w-full h-[2px] mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700"/>
                 </div>
@@ -45,7 +45,7 @@ const QaSection = () => {
         
             <div>
             {onBoardingQandA.map((oQandA,i)=>{
-              return <div key={oQandA.id}> <h5 className='flex items-center justify-between gap-4 font-extrabold mb-4' onClick={()=>handleClick2(i)}><span>{oQandA.question}</span><span className='text-xl cursor-pointer'>{click2===i?'-':'+'}</span></h5>
+              return <div key={oQandA.id}> <h5 className='flex items-center justify-between gap-4 font-extrabold mb-4' onClick={()=>handleClick2(i)}><span className='cursor-pointer'>{oQandA.question}</span><span className='text-xl cursor-pointer'>{click2===i?'-':'+'}</span></h5>
                 <h6 className={click2 === i ?'block':'hidden'}>{oQandA.answer}</h6> 
                 <hr className="w-full h-[2px] mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700"/>
                 </div>

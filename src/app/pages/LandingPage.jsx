@@ -12,12 +12,14 @@ import Footer from './Footer'
 import TrustedBySection from '../components/TrustedBySection'
 import ProductDevelpment from '../components/ProductDevelpment'
 import MvpSection from '../components/MvpSection'
+import ServiceDropDown from '../components/ServiceDropDown'
 
 
 const LandingPage = () => {
   return (
     <div>
         <NavBar />
+        {/* <ServiceDropDown /> */}
         <HeroSection />
         <TrustedBySection />
         <ProductDevelpment />
