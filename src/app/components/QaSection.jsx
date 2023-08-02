@@ -1,8 +1,9 @@
 'use client';
-import React, { useState } from 'react'
+import React, { useState,useRef,useEffect } from 'react'
 import { AiOutlinePlus} from "react-icons/ai";
 import generalQandA from '../assets/contents/generalQandA';
 import onBoardingQandA from '../assets/contents/onBoardingQandA';
+import { motion, useInView, useAnimation } from "framer-motion";
 
 const QaSection = () => {
   const [click,setClick] = useState(null);
@@ -23,9 +24,29 @@ const QaSection = () => {
     }
     
   }
+  const ref = useRef(null);
+  const isView = useInView(ref);
+
+  const controlAnimation = useAnimation();
+
+  useEffect(()=>{
+    if (isView){
+      controlAnimation.start("visible")
+    }else{
+      controlAnimation.start("hidden")
+    }
+  },[isView])
   return (
-    <div className='md:h-[70vh] w-full md:px-32 px-8 mt-8 md:flex gap-16'>
-    <div className='bg-[#C5ECF0] p-8 md:w-[50%]'>
+    <div ref={ref} className='md:h-[70vh] w-full md:px-32 px-8 mt-8 md:flex gap-16'>
+    <motion.div
+    variants={{
+      hidden:{x:'-100vw',opacity:0},
+      visible:{x:0,opacity:1}
+    }}
+    initial="hidden"
+    animate={controlAnimation}
+    transition={{type:'spring',stiffness:30}}
+     className='bg-[#C5ECF0] p-8 md:w-[50%]'>
         <h4 className='text-2xl font-semibold mb-4'>General</h4>
         
             <div>
@@ -38,9 +59,17 @@ const QaSection = () => {
             </div>
            
         
-    </div>
+    </motion.div>
 
-    <div className='bg-[#C5ECF0] p-8 md:w-[50%]'>
+    <motion.div
+    variants={{
+      hidden:{x:'100vw',opacity:0},
+      visible:{x:0,opacity:1}
+    }}
+    initial="hidden"
+    animate={controlAnimation}
+    transition={{type:'spring',stiffness:30}}
+     className='bg-[#C5ECF0] p-8 md:w-[50%]'>
         <h4 className='text-2xl font-semibold mb-4'>Onboarding</h4>
         
             <div>
@@ -53,7 +82,7 @@ const QaSection = () => {
             </div>
            
         
-    </div>
+    </motion.div>
     </div>
    
   )

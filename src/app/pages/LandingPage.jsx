@@ -17,7 +17,7 @@ import ServiceDropDown from '../components/ServiceDropDown'
 
 const LandingPage = () => {
   return (
-    <div>
+    <div className='overflow-hidden'>
         <NavBar />
         {/* <ServiceDropDown /> */}
         <HeroSection />
