@@ -6,7 +6,7 @@ import {motion,useInView,useAnimation} from 'framer-motion';
 
 const ProductDevelpment = () => {
   const ref = useRef(null);
-  const isView = useInView(ref);
+  const isView = useInView(ref,{once:true});
 
   const controlAnimation = useAnimation();
 

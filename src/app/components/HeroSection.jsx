@@ -15,7 +15,7 @@ const HeroSection = () => {
         <h1>Expand,Grow and Elevate</h1>
         <h1>your tech team with us.</h1>
         <p className='text-2xl my-4'>We empowere numerous organizations to achieve business success through our expertise by engineering digital products.</p>
-        <button className='group text-xl md:text-2xl font-medium bg-[#45C1CE] py-6 px-12 rounded-full mt-4 md:self-start'><span>Get Started</span><span><FaArrowRight className='inline-flex items-center ml-3 justify-center group-hover:translate-x-1 group-hover:duration-300'/></span></button>
+        <button className='group text-xl md:text-2xl font-medium bg-[#45C1CE] hover:bg-[#3a9fa8] py-6 px-12 rounded-full mt-4 md:self-start text-[#004450]'><span>Get Started</span><span><FaArrowRight className='inline-flex items-center ml-3 justify-center group-hover:translate-x-1 group-hover:duration-300'/></span></button>
     </motion.div>
 
     {/* {hero image section} */}

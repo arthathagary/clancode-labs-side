@@ -29,7 +29,7 @@ const NavBar = () => {
                 <a href=''><li className='text-[1.1rem] text-gray-600 hover:text-gray-950'>Blog</li></a>
             </ul>
         
-        <button className='group hidden md:flex bg-[#E6ECEE] py-3 px-6 rounded-3xl text-[1.1rem]'><span>Contact us</span><span><FaArrowRight className='inline-flex items-center ml-3 justify-center group-hover:translate-x-1 group-hover:duration-300'/></span></button>
+        <button className='group hidden md:flex bg-[#E6ECEE] py-3 px-6 rounded-3xl text-[1.1rem] text-[#004450]'><span>Contact us</span><span><FaArrowRight className='inline-flex items-center ml-3 justify-center group-hover:rotate-90 group-hover:duration-300'/></span></button>
 
         {/* {Hamburger Button} */}
         <div onClick={handleHamClick} className='z-10 md:hidden cursor-pointer'>

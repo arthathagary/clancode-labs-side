@@ -25,7 +25,7 @@ const QaSection = () => {
     
   }
   const ref = useRef(null);
-  const isView = useInView(ref);
+  const isView = useInView(ref,{once:true});
 
   const controlAnimation = useAnimation();
 
