@@ -2,14 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
 @layer base {
   li{
-    @apply px-4;
+    @apply px-3;
     @apply cursor-pointer;
   }
   p{
-    @apply text-xl;
+    @apply md:text-xl text-xs;
     @apply text-[#45535F];
+  }
+  h1{
+    @apply md:text-6xl text-4xl font-bold text-[#004450] md:leading-tight;
+  }
+  h2{
+    @apply md:text-5xl text-3xl md:mb-6 mb-8 mt-2 md:mt-0 font-semibold text-[#004450];
+    @apply leading-snug;
   }
 }
 
