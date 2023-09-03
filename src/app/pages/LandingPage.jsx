@@ -22,7 +22,7 @@ const LandingPage = () => {
         {/* <ServiceDropDown /> */}
         <HeroSection />
         <TrustedBySection />
-        <Slider/>
+        <Slider />
         <ProductDevelpment />
         <MvpSection />
         <AboutPage />
