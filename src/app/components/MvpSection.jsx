@@ -18,7 +18,7 @@ const MvpSection = () => {
     }
   }, [isView]);
   return (
-    <div
+    <div id="mvpsection"
       ref={ref}
       className="md:flex md:h-[70vh] w-full md:px-32 px-8 py-6 md:py-0 justify-center items-center gap-8"
     >
