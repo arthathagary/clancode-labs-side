@@ -21,8 +21,8 @@ const LandingPage = () => {
         <NavBar />
         {/* <ServiceDropDown /> */}
         <HeroSection />
-        <Slider/>
         <TrustedBySection />
+        <Slider/>
         <ProductDevelpment />
         <MvpSection />
         <AboutPage />
