@@ -1,50 +1,47 @@
-'use client';// components/ImageSlider.js
-'use client'
-import React, { useState, useEffect } from 'react';
-import SliderItem from './SliderItem';
+"use client"
+import React, {Component} from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-const images = [
-  'https://asianetbroadband.in/wp-content/uploads/2020/03/importance-of-internet-technology-for-easy-life.jpeg',
-  'https://www.epictechnology.lk/wp-content/uploads/2019/03/epic4.jpg',
-  'https://media.istockphoto.com/id/1311598658/photo/businessman-trading-online-stock-market-on-teblet-screen-digital-investment-concept.jpg?b=1&s=612x612&w=0&k=20&c=bpQMsH07ziELXla0SZJt84-w0JkxsVXs05c7T2Iygks=',
-];
-
-const ImageSlider = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  // Function to advance to the next slide
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
-    );
-  };
-
-  // Automatically advance to the next slide every 3 seconds
-  useEffect(() => {
-    const intervalId = setInterval(nextSlide, 3000);
-
-    return () => {
-      clearInterval(intervalId);
+class App extends Component{
+  render(){
+    const settings = {
+      dots: true,
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      speed: 4000,
+      autoplaySpeed: 2000,
+      cssEase: "linear"
     };
-  }, []);
+    return(
+      <div className="h-[1px] mb-[-50px]" >
+        
+        <Slider {...settings}>
+          <div className="p-0  ">
+            <img className="w-[45%]  object-cover" src="https://www.freepnglogos.com/uploads/spotify-logo-png/spotify-icon-marilyn-scott-0.png" />
+          </div>
+          <div className="p-0   ">
+            <img  className="w-[50%]  object-cover"  src="https://www.freepnglogos.com/uploads/logo-ig-png/logo-ig-logo-abundant-instagram-logo-simple-icon-1.png" />
+          </div>
+          <div className="p-0 ">
+            <img  className="w-[50%]  object-cover"  src="https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-bird-symbols-png-logo-0.png" />
+          </div>
+          <div className="p-0">
+            <img  className="w-[50%]  object-cover"  src="https://www.freepnglogos.com/uploads/snapchat-logo-png-0.png" />
+          </div>
+          <div className="p-0">
+            <img  className="w-[40%]  object-cover"  src="https://www.freepnglogos.com/uploads/swirl-png/purple-swirl-transparent-png-art-2.png" />
+          </div>
+          <div className="p-0">
+            <img  className="w-[40%]  object-cover"  src="https://www.freepnglogos.com/uploads/shopee-logo-png/shopee-logo-shop-with-the-gentlemen-collection-and-win-the-shopee-0.png" />
+          </div>
+        </Slider>
+      </div>
+    );
+  }
+}
 
-  return (
-    <div>
-    <div className="relative ">
-      {images.map((image, index) => (
-        <SliderItem
-          key={index}
-          image={image}
-          isActive={index === currentIndex}
-        />
-      ))}
-    </div>
-    </div>
-  );
-};
-
-export default ImageSlider;
-
-
-
-
+export default App;

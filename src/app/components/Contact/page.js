@@ -45,7 +45,7 @@ const page = () => {
               id="message"
               name="message"
               rows="4"
-              className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-500"
+              className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-500"
               placeholder="Your Message"
             ></textarea>
           </div>
@@ -59,7 +59,7 @@ const page = () => {
       </div>
     </div>
 
-export default Contact;
+
 
         <Footer/>
    
