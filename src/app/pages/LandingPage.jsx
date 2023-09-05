@@ -13,18 +13,20 @@ import TrustedBySection from '../components/TrustedBySection'
 import ProductDevelpment from '../components/ProductDevelpment'
 import MvpSection from '../components/MvpSection'
 import ServiceDropDown from '../components/ServiceDropDown'
-
+import Slider from '../components/Slider'
 
 const LandingPage = () => {
   return (
-    <div className='overflow-hidden'>
+    <div className='overflow-hidden' id='home'>
         <NavBar />
         {/* <ServiceDropDown /> */}
         <HeroSection />
         <TrustedBySection />
+        <Slider />
         <ProductDevelpment />
         <MvpSection />
-        {/* <AboutPage /> */}
+        <AboutPage />
+
         {/* <IdeasToStorySection /> */}
         {/* <StoriesToProductSection /> */}
         {/* <OnboardingSection /> */}

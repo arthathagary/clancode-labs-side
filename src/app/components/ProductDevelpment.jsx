@@ -20,7 +20,7 @@ const ProductDevelpment = () => {
 
 
   return (
-    <div ref={ref} className='md:flex bg-[#DAF3F4] md:h-[70vh] w-full md:px-32 px-8 py-6 md:py-0 justify-center items-center gap-8'>
+    <div ref={ref} className='md:flex bg-[#DAF3F4] md:h-[70vh] w-full md:px-32 px-8 py-6 md:py-0 justify-center items-center gap-8 mt-[300px] md:mt-[400px] lg:mt-[450px]'>
     <motion.div
     variants={{
       hidden:{x:'-100vw',opacity:0},

@@ -63,7 +63,7 @@ const ServicesPage = () => {
     <div
       ref={ref}
       id="services"
-      className="md:h-[70vh] w-full md:px-32 px-8 md:grid grid-cols-3 items-center  bg-[#DAF3F4] gap-4 py-6 md:py-0"
+      className="md:h-[70vh] w-full md:px-32 px-8 md:mt-24 lg:mt-0 md:grid grid-cols-3 items-center  bg-[#DAF3F4] gap-4 py-6 md:py-0"
     >
       <motion.div
         variants={{
