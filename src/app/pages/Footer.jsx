@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className='w-full md:px-32 px-8 md:flex items-center bg-[#004450] md:py-6 py-6 md:justify-evenly' >
         <div className='text-center'>
-            <div className='w-60 ml-[20%]'><Image src={whiteLogo} alt='logo'/></div>
+            <div className='w-60 '><Image src={whiteLogo} alt='logo'/></div>
             {/* <h6 className='text-[white] mb-4'>Product engineering simplified</h6>  */}
             <div className='flex gap-4 mb-4 justify-center mt-2'>
             <FaLinkedin size={20} color='white' />
@@ -18,7 +18,7 @@ const Footer = () => {
         </div>
 
         <nav>
-          <ul className='md:flex md:gap-2 mb-4 ml-[42%]'>
+          <ul className='md:flex md:gap md:mr-0 ml-[40%] mb-4 '>
             <li className='text-[white] font-medium'>Home</li>
             <li className='text-[white] font-medium'>About</li>
             <li className='text-[white] font-medium'>Services</li>
