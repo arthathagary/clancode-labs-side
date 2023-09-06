@@ -9,7 +9,7 @@ class App extends Component{
     const settings = {
       dots: true,
       infinite: true,
-      slidesToShow: 3,
+      slidesToShow: 4,
       slidesToScroll: 1,
       autoplay: true,
       speed: 4000,
@@ -21,22 +21,22 @@ class App extends Component{
         
         <Slider {...settings}>
           <div className="p-0  ">
-            <img className="w-[45%]  object-cover" src="https://www.freepnglogos.com/uploads/spotify-logo-png/spotify-icon-marilyn-scott-0.png" />
+            <img className="w-[45%] lg:w-[30%]  object-cover" src="https://www.freepnglogos.com/uploads/spotify-logo-png/spotify-icon-marilyn-scott-0.png" />
           </div>
           <div className="p-0   ">
-            <img  className="w-[50%]  object-cover"  src="https://www.freepnglogos.com/uploads/logo-ig-png/logo-ig-logo-abundant-instagram-logo-simple-icon-1.png" />
+            <img  className="w-[50%] lg:w-[30%]  object-cover"  src="https://www.freepnglogos.com/uploads/logo-ig-png/logo-ig-logo-abundant-instagram-logo-simple-icon-1.png" />
           </div>
           <div className="p-0 ">
-            <img  className="w-[50%]  object-cover"  src="https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-bird-symbols-png-logo-0.png" />
+            <img  className="w-[50%] lg:w-[30%]  object-cover"  src="https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-bird-symbols-png-logo-0.png" />
           </div>
           <div className="p-0">
-            <img  className="w-[50%]  object-cover"  src="https://www.freepnglogos.com/uploads/snapchat-logo-png-0.png" />
+            <img  className="w-[50%] lg:w-[30%]  object-cover"  src="https://www.freepnglogos.com/uploads/snapchat-logo-png-0.png" />
           </div>
           <div className="p-0">
-            <img  className="w-[40%]  object-cover"  src="https://www.freepnglogos.com/uploads/swirl-png/purple-swirl-transparent-png-art-2.png" />
+            <img  className="w-[40%] lg:w-[30%]  object-cover"  src="https://www.freepnglogos.com/uploads/swirl-png/purple-swirl-transparent-png-art-2.png" />
           </div>
           <div className="p-0">
-            <img  className="w-[40%]  object-cover"  src="https://www.freepnglogos.com/uploads/shopee-logo-png/shopee-logo-shop-with-the-gentlemen-collection-and-win-the-shopee-0.png" />
+            <img  className="w-[40%] lg:w-[30%]  object-cover"  src="https://www.freepnglogos.com/uploads/shopee-logo-png/shopee-logo-shop-with-the-gentlemen-collection-and-win-the-shopee-0.png" />
           </div>
         </Slider>
       </div>
