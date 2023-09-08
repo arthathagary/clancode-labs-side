@@ -1,91 +1,63 @@
 import React from 'react'
 import NavBar from '../NavBar'
-import {BiPhoneCall} from 'react-icons/bi'
+import {BiPhoneCall,BiCurrentLocation,BiLocationPlus,BiLogoGmail} from 'react-icons/bi'
 import Footer from '@/app/pages/Footer'
 
 const page = () => {
   return (
     <div className='width-full h-[100vh]'>
         <NavBar/>
-   
-
-        <div class="container my-24 mx-auto md:px-6">
-
-  <section class="mb-32">
-    <div class="relative h-[300px] overflow-hidden bg-cover bg-[50%] bg-no-repeat bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTWYenGebfzJCuwiR4WdjzTzI7BdavwbbeHA&usqp=CAU')]"></div>
-    <div class="container px-6 md:px-12">
-      <div
-        class="block rounded-lg bg-[hsla(0,0%,100%,0.8)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.7)] dark:shadow-black/20 md:py-16 md:px-12 -mt-[100px] backdrop-blur-[30px]">
-        <div class="flex flex-wrap">
-          <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6">
-            <form>
-              <div class="relative mb-6" data-te-input-wrapper-init>
-                <input type="text"
-                  class="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 border-black dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
-                  id="exampleInput90" placeholder="Name" />
-                <label
-                  class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
-                  for="exampleInput90">Name
-                </label>
-              </div>
-              <div class="relative mb-6" data-te-input-wrapper-init>
-                <input type="email"
-                  class="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
-                  id="exampleInput91" placeholder="Email address" />
-                <label
-                  class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
-                  for="exampleInput91">Email address
-                </label>
-              </div>
-              <div class="relative mb-6" data-te-input-wrapper-init>
-                <textarea
-                  class="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
-                  id="exampleFormControlTextarea1" rows="3" placeholder="Your message"></textarea>
-                <label for="exampleFormControlTextarea1"
-                  class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary">Message</label>
-              </div>
-            
-              <button type="button" data-te-ripple-init data-te-ripple-color="light"
-                class="mb-6 inline-block bg-white w-full rounded bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal">
-                Send
-              </button>
-            </form>
-          </div>
-          <div class="w-full shrink-0 grow-0 basis-auto lg:w-7/12">
-            <div class="flex flex-wrap">
-              <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:w-full lg:px-6 xl:w-6/12">
-                <div class="flex items-start">
-                  <div class="shrink-0">
-                    <div class="inline-block rounded-md bg-primary-100 p-4 text-primary">
-                    <BiPhoneCall/>
-                    </div>
-                  </div>
-                  <div class="ml-6 grow">
-                    <p class="mb-2 font-bold dark:text-white">
-                      DW studio
-                    </p>
-                    <p class="text-neutral-500 dark:text-neutral-200">
-                      agry@gmail.com
-                    </p>
-                    <p class="text-neutral-500 dark:text-neutral-200">
-                     +94754696852
-                    </p>
-                  </div>
-                </div>
-                
-          
-             
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-</div>
+ <div  className='mt-40  flex flex-col justify-center ml-[20%] '>
+  <h1 className=' text-5xl justify-start font-bold text-blue-950  '>
+    Send Us a message
+  </h1>
+  <p className='w-[70%] lg:w-[50%] '>Send us a message and we will get back to you as soon as possible. We look forward to hearing from you.</p>
+ <div className='sm:grid ml[-20px] lg:w-[70%] sm:grid-cols-2 sm:grid-rows-3 flex flex-col gap-[-20px]'>
+ <div  className='m-0 flex flex-col p-4 mt-4 '>
+  <label className='mb-2 '>
+    Name
+  </label>
+ <input placeholder='Enter Name ' className=' outline-none'/>
+ </div>
+ <div className='m-0 flex flex-col p-4 mt-4'>
+  <label className='mb-2'>
+  Your website
+  </label>
+ <input placeholder='Enter Your website' className=' outline-none'/>
+ </div>
+ <div className='m-0 flex flex-col p-4 mt-4 '>
+  <label className='mb-2'>
+  E-mail
+  </label>
+ <input placeholder='Enter Email Address' className=' outline-none'/>
+ </div>
+ <div className='m-0 flex flex-col p-4 mt-4 '>
+  <label className='mb-2'>
+  Phone
+  </label>
+ <input placeholder='Enter Phone Number' className=' outline-none'/>
+ </div>
+ <div className='m-0 flex flex-col p-4 mt-4 '>
+  <label className='mb-2'>
+  Your Message
+  </label>
+  <textarea
+            id="message"
+            rows="4"
+            className="block p-2. outline-none w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-200 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          ></textarea>
+ </div>
+ </div>
+ <div className='p-4'>
+ <input type="checkbox" className='w-5 ' id="tickButton" name="tick" value="selected"></input>
+ <label for="tickButton">Tick box</label></div>
+ <div>
 
 
+  <button className=' py-2 px-32 mb-10 rounded-lg bg-black text-white ' > Send</button>
+ </div>
+ 
+ </div>
 
 
         <Footer/>

@@ -3,13 +3,14 @@ import React,{useState,useEffect} from 'react'
 import {FaBars,FaTimes,FaArrowRight} from 'react-icons/fa'
 import Image from 'next/image'
 import Logo from '../../../public/assets/images/logo.svg'
-import Link from 'next/link'
-import ServiceDropDown from './ServiceDropDown';
+import Link from 'next/link';
+
+import { animateScroll as scroll } from 'react-scroll';
 
 
 const NavBar = () => {
   const [nav,setNav] = useState(false);
-  const [color,setColor]=useState('transparent')
+  const [color,setColor]=useState('white')
   const [text,setText] =useState('black')
 
   const handleHamClick = ()=>setNav(!nav)
@@ -18,16 +19,17 @@ useEffect(()=>{
   const change=()=>{
     if(window.scrollY>=90){
 
-      setColor('rgb(30, 30, 30)')
-      setText('white')
+      setColor('White')
+      setText('black')
     }
     else{
-      setColor('transparent')
+      setColor('white')
       setText('	black ')
     }
   }
   window.addEventListener('scroll',change);
 },[])
+
 
   const [menu,setMenu] = useState(true);
   const handleMouseOver = ()=>{
@@ -35,26 +37,30 @@ useEffect(()=>{
   }
   return (
 
-<div style={{backgroundColor:`${color}`}} className=' fixed font-sans z-40   left-0 top-0 w-full ease-in-out duration-500 '>
+<div style={{backgroundColor:`${color}`}} className=' fixed font-sans z-40  left-0 top-0 w-full ease-in-out duration-500 '>
   <div className=' w-full m-auto bg-transparent flex justify-evenly items-center p-4 text-black'>
 <Link href='/'> 
           <div style={{color:`${text}`}}  className='w-[200px] bg-black'><Image src={Logo}/></div>
         </Link>
-  <ul style={{color:`${text}`}} className='hidden md:flex md:text-xs lg:text-lg  '>
-    <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105'>
-      <a href="/">Home</a>
-    </li>
+  <ul style={{color:`${text}`}} className='hidden md:flex md:text-xs  lg:text-lg  '>
+    
+    <li className=' p-4 pr-7 scroll-s hover:text-red-700 hover:scale-105'>
+    <Link href='/'> Home</Link>
+    </li><Link href="/#aboutpage">
     <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 '>
-      <a href="#aboutpage">About</a>
-    </li>
-   <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 '><a href="#services">Service</a></li>
-   <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 '><a href="#mvpsection">Portfolio</a></li>
-   <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 '><a href="#">Careers</a></li>
-   <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 '><a href="#">Blog</a></li>
+      About</li></Link>
+    <Link href="/#services">
+   <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 '>Service</li></Link><Link href=''>
+   <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 '>Portfolio</li></Link><Link href=''>
+   <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 '>Careers</li></Link><Link href=''>
+   <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 '>Blog</li></Link>
   
   </ul>
+  <div>
+    
+  </div>
   <div><Link href="/components/Contact">
-   <button className=' hidden  md:flex items-center justify-center mt-2 type="button" class="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-6 py-3 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"  '>Contact Us</button></Link>
+   <button className=' hidden border-none  md:flex items-center justify-center mt-2 type="button" class="focus:outline-none text-white bg-[#808080] hover:bg-black   text-xl rounded-2xl font-bold  px-5 py-2 mr-2 mb-2   '>Contact Us</button></Link>
    </div>
 
   
@@ -78,7 +84,7 @@ useEffect(()=>{
    <li onClick={handleHamClick} className='p-4 text-2xl hover:text-gray-900   text-white '><a href="#mvpsection">Portfolio</a></li>
    <li onClick={handleHamClick} className='p-4 text-2xl hover:text-gray-900   text-white '><a href="#">Careers</a></li>
    <li onClick={handleHamClick} className='p-4 text-2xl hover:text-gray-900   text-white '><a href="#">Blog</a></li>
-   <Link href="/components/Contact"><button onClick={handleHamClick} className='type="button" class="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-white dark:focus:ring-green-800" '>Contact Us</button></Link>
+   <Link href="/components/Contact"><button onClick={handleHamClick} className='type="button" class="focus:outline-none text-black bg-[#808080] hover:bg-white hover:text-black focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-white dark:focus:ring-green-800" '>Contact Us</button></Link>
    
   </ul>
   </div>
