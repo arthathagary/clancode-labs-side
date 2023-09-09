@@ -17,25 +17,25 @@ const page = () => {
   <label className='mb-2 '>
     Name
   </label>
- <input placeholder='Enter Name ' className=' outline-none  text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-200 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 p-2'/>
+ <input placeholder='Enter Name ' className=' outline-none shadow-lg  text-gray-900 bg-transparent bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-200 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 p-2'/>
  </div>
  <div className='m-0 flex flex-col p-4 mt-4'>
   <label className='mb-2'>
   Your website
   </label>
- <input placeholder='Enter Your website' className=' outline-none  text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-200 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 p-2'/>
+ <input placeholder='Enter Your website' className=' outline-none shadow-lg  text-gray-900 bg-transparent bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-200 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 p-2'/>
  </div>
  <div className='m-0 flex flex-col p-4 mt-4 '>
   <label className='mb-2'>
   E-mail
   </label>
- <input placeholder='Enter Email Address' className=' outline-none  text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-200 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 p-2'/>
+ <input placeholder='Enter Email Address' className=' outline-none shadow-lg  text-gray-900 bg-transparent bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-200 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 p-2'/>
  </div>
  <div className='m-0 flex flex-col p-4 mt-4 '>
   <label className='mb-2'>
   Phone
   </label>
- <input placeholder='Enter Phone Number' className=' outline-none  text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-200 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 p-2'/>
+ <input placeholder='Enter Phone Number' className=' outline-none shadow-lg  text-gray-900 bg-transparent rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-200 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 p-2'/>
  </div>
  <div className='m-0 flex flex-col p-4 mt-4 sm:mb-0 '>
   <label className='mb-2'>
@@ -44,7 +44,7 @@ const page = () => {
   <textarea
             id="message"
             rows="4"
-            className="block p-2. outline-none w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-200 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            className="block p-2. outline-none w-full text-sm shadow-lg text-gray-900 bg-transparent bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-200 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           ></textarea>
  </div>
  </div>

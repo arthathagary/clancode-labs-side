@@ -6,7 +6,7 @@ import HeroImg from '../../../public/assets/images/heroImg.png'
 import {motion} from 'framer-motion';
 const HeroSection = () => {
   return (
-    <div className='md:flex mt-[80px] bg-[#DAF3F4] lg:h-[90vh] w-full md:px-32 px-8 py-6 md:py-0'>
+    <div className='md:flex mt-[70px] bg-[#DAF3F4] lg:h-[90vh] w-full md:px-32 px-8 py-6 md:py-0'>
     <motion.div 
     initial={{x:'-100vw'}}
     animate={{x:0}}

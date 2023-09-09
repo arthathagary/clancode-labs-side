@@ -5,7 +5,6 @@ import Image from 'next/image'
 import Logo from '../../../public/assets/images/logo.svg'
 import Link from 'next/link';
 
-import { animateScroll as scroll } from 'react-scroll';
 
 
 const NavBar = () => {
@@ -20,30 +19,30 @@ const NavBar = () => {
   }
   return (
 
-<div className=' fixed font-sans z-40  left-0 top-0 w-full ease-in-out duration-500 '>
-  <div className=' w-full m-auto bg-white flex justify-evenly items-center p-4 text-black' >
+<div className=' fixed font-sans z-40  left-0 top-0 w-full ease-in-out shadow-md duration-500 '>
+  <div className=' w-full m-auto h-[75px] bg-white flex justify-evenly items-center p-4 text-black' >
 <Link href='/' > 
-          <div   className='w-[200px] bg-black'><Image src={Logo}/></div>
+          <div   className='w-[200px] justify-center bg-black'><Image src={Logo}/></div>
         </Link>
   <ul  className='hidden md:flex md:text-xs  lg:text-lg  '>
     
-    <li className=' p-4 pr-7 scroll-s hover:text-red-700 hover:scale-105'>
+    <li className=' p-4 pr-7 scroll-s hover:text-red-700 hover:scale-105 font-mono'>
     <Link href='/'> Home</Link>
     </li><Link href="/#aboutpage">
-    <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 '>
+    <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 font-mono '>
       About</li></Link>
     <Link href="/#services">
-   <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 '>Service</li></Link><Link href=''>
-   <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 '>Portfolio</li></Link><Link href=''>
-   <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 '>Careers</li></Link><Link href=''>
-   <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 '>Blog</li></Link>
+   <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 font-mono '>Service</li></Link><Link href=''>
+   <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 font-mono '>Portfolio</li></Link><Link href=''>
+   <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 font-mono '>Careers</li></Link><Link href=''>
+   <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 font-mono '>Blog</li></Link>
   
   </ul>
   <div>
     
   </div>
   <div>
-   <button className=' hidden border-none  md:flex items-center justify-center mt-2 type="button" class="focus:outline-none text-white bg-[#808080] hover:bg-black   text-xl rounded-xl font-bold  px-5 py-2 mr-2 mb-2   '><Link href="/components/Contact">Contact Us</Link></button>
+   <button className='font-mono hidden border-none  md:flex items-center justify-center mt-2 type="button" class="focus:outline-none text-white bg-[#808080] hover:bg-black   text-xl rounded-lg f  px-5 py-3 mr-2 mb-2   '><Link href="/components/Contact">Contact Us</Link></button>
    </div>
 
   
