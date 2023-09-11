@@ -24,7 +24,7 @@ const NavBar = () => {
 <Link href='/' > 
           <div   className='w-[200px] justify-center bg-black'><Image src={Logo}/></div>
         </Link>
-  <ul  className='hidden md:flex md:text-xs  lg:text-lg  '>
+  <ul  className='hidden lg:flex md:text-xs  lg:text-lg  '>
     
     <li className=' p-4 pr-7 scroll-s hover:text-red-700 hover:scale-105'>
     <Link href='/'> Home</Link>
@@ -42,19 +42,19 @@ const NavBar = () => {
     
   </div>
   <div>
-   <button className='font-mono hidden border-none  md:flex items-center justify-center mt-2 type="button" class="focus:outline-none text-white bg-[#808080] hover:bg-black   text-xl rounded-lg f  px-3 py-2 mr-2 mb-2   '><Link href="/contact">Contact Us</Link></button>
+   <button className='font-mono hidden border-none  lg:flex items-center justify-center mt-2 type="button" class="focus:outline-none text-white bg-[#808080] hover:bg-black   text-xl rounded-lg f  px-3 py-2 mr-2 mb-2   '><Link href="/contact">Contact Us</Link></button>
    </div>
 
   
   {/* mobile Icons */}
 
-  <div className=' md:hidden z-50 block cursor-pointer '  onClick={handleHamClick}>
+  <div className=' lg:hidden z-50 block cursor-pointer '  onClick={handleHamClick}>
   
         {!nav?<FaBars size={20}  className=''/>:<FaTimes size={20} className='mt-0 text-black bg-white'/>}
        
   </div>
   {/* Mobile menu */}
-  <div  className={nav ? ' md:hidden text-black  absolute top-0 right-0 bottom-0 left-0 flex justify-center items-center w-full h-screen bg-black  text-center ease-in-out duration-500':'md:hidden  absolute top-0 right-0 bottom-0 left-[-100%] flex justify-center items-center w-full h-screen bg-slate-500  text-center ease-in-out duration-500 '}>
+  <div  className={nav ? ' lg:hidden text-black  absolute top-0 right-0 bottom-0 left-0 flex justify-center items-center w-full h-screen bg-black  text-center ease-in-out duration-500':'lg:hidden  absolute top-0 right-0 bottom-0 left-[-100%] flex justify-center items-center w-full h-screen bg-slate-500  text-center ease-in-out duration-500 '}>
   <ul>
     <li onClick={handleHamClick} className='p-4 text-2xl hover:text-gray-900  text-white '>
       <a href="/">Home</a>
