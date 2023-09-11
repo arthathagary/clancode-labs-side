@@ -2,7 +2,7 @@
 import React,{useState,useEffect} from 'react'
 import {FaBars,FaTimes,FaArrowRight} from 'react-icons/fa'
 import Image from 'next/image'
-import Logo from '../../../public/assets/images/logo.svg'
+import Logo from '../../public/assets/images/logo.svg'
 import Link from 'next/link';
 
 
@@ -26,23 +26,23 @@ const NavBar = () => {
         </Link>
   <ul  className='hidden md:flex md:text-xs  lg:text-lg  '>
     
-    <li className=' p-4 pr-7 scroll-s hover:text-red-700 hover:scale-105 font-mono'>
+    <li className=' p-4 pr-7 scroll-s hover:text-red-700 hover:scale-105'>
     <Link href='/'> Home</Link>
     </li><Link href="/#aboutpage">
-    <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 font-mono '>
+    <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 '>
       About</li></Link>
     <Link href="/#services">
-   <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 font-mono '>Service</li></Link><Link href=''>
-   <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 font-mono '>Portfolio</li></Link><Link href=''>
-   <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 font-mono '>Careers</li></Link><Link href=''>
-   <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 font-mono '>Blog</li></Link>
+   <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 '>Service</li></Link><Link href=''>
+   <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 '>Portfolio</li></Link><Link href=''>
+   <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 '>Careers</li></Link><Link href=''>
+   <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 '>Blog</li></Link>
   
   </ul>
   <div>
     
   </div>
   <div>
-   <button className='font-mono hidden border-none  md:flex items-center justify-center mt-2 type="button" class="focus:outline-none text-white bg-[#808080] hover:bg-black   text-xl rounded-lg f  px-5 py-3 mr-2 mb-2   '><Link href="/components/Contact">Contact Us</Link></button>
+   <button className='font-mono hidden border-none  md:flex items-center justify-center mt-2 type="button" class="focus:outline-none text-white bg-[#808080] hover:bg-black   text-xl rounded-lg f  px-3 py-2 mr-2 mb-2   '><Link href="/contact">Contact Us</Link></button>
    </div>
 
   
@@ -66,7 +66,7 @@ const NavBar = () => {
    <li onClick={handleHamClick} className='p-4 text-2xl hover:text-gray-900   text-white '><Link href="#mvpsection">Portfolio</Link></li>
    <li onClick={handleHamClick} className='p-4 text-2xl hover:text-gray-900   text-white '><Link href="#">Careers</Link></li>
    <li onClick={handleHamClick} className='p-4 text-2xl hover:text-gray-900   text-white '><Link href="#">Blog</Link></li>
-   <Link href="/components/Contact"><button onClick={handleHamClick} className='type="button" class="focus:outline-none text-black bg-[#808080] hover:bg-white hover:text-black focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-white dark:focus:ring-green-800" '>Contact Us</button></Link>
+ <button onClick={handleHamClick} className='type="button" class="focus:outline-none text-black bg-[#808080] hover:bg-white hover:text-black focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-white dark:focus:ring-green-800" '>  <Link href="/contact">Contact Us</Link></button>
    
   </ul>
   </div>

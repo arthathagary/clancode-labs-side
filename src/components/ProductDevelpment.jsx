@@ -1,7 +1,7 @@
 'use client';
 import React,{useEffect,useRef} from 'react'
 import Image from 'next/image'
-import productDevelopmentImg from '../../../public/assets/images/productDevelopment.jpg'
+import productDevelopmentImg from '../../public/assets/images/productDevelopment.jpg'
 import {motion,useInView,useAnimation} from 'framer-motion';
 
 const ProductDevelpment = () => {

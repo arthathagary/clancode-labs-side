@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
-import webAppProjectImg from "../../../public/assets/images/webAppProject.jpg";
+import webAppProjectImg from "../../public/assets/images/webAppProject.jpg";
 import { motion, useInView, useAnimation } from "framer-motion";
 
 const MvpSection = () => {

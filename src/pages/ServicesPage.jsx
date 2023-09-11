@@ -3,8 +3,8 @@ import React, { useState, useEffect, useRef } from "react";
 import { GoStack } from "react-icons/go";
 import { FaAngular, FaReact, FaNodeJs } from "react-icons/fa";
 import Image from "next/image";
-import webAppProjectImg from "../../../public/assets/images/webAppProject.jpg";
-import ProjectImg from "../../../public/assets/images/productDevelopment.jpg";
+import webAppProjectImg from "../../public/assets/images/webAppProject.jpg";
+import ProjectImg from "../../public/assets/images/productDevelopment.jpg";
 import { motion, useInView, useAnimation } from "framer-motion";
 
 const ServicesPage = () => {

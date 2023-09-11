@@ -2,7 +2,7 @@
 import React from 'react'
 import {FaArrowRight} from 'react-icons/fa'
 import Image from 'next/image'
-import HeroImg from '../../../public/assets/images/heroImg.png'
+import HeroImg from '../../public/assets/images/heroImg.png'
 import {motion} from 'framer-motion';
 const HeroSection = () => {
   return (

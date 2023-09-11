@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-
-html {
-  @apply scroll-smooth;
+html{
+  scroll-behavior: smooth
 }
+
 @layer base {
   li{
     @apply px-3;

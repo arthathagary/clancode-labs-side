@@ -2,7 +2,7 @@ import React from 'react'
 import { FaLinkedin,FaFacebookSquare} from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import Image from 'next/image'
-import whiteLogo from '../../../public/assets/images/logoWhite.svg'
+import whiteLogo from '../../public/assets/images/logoWhite.svg'
 const Footer = () => {
   return (
     <footer className='w-full md:px-32 px-8 md:flex items-center bg-[#004450] md:py-6 py-6 md:justify-evenly' >
