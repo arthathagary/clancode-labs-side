@@ -30,8 +30,8 @@ const ProductDevelpment = () => {
     animate={controlAnimation}
     transition={{type:'spring',stiffness:30}}
      className='md:w-[50%]'>
-    <h3 className='font-bold md:mb-4'>Product Development</h3>
-    <h2>Innovative solutions Solid engineering</h2>
+    <h3 className='font-bold text-2xl md:mb-4'>Product Development</h3>
+    <h2 className='font-bold'>Innovative solutions Solid engineering</h2>
     <p className='pb-6'>We complement your vision of building the right product, by helping you build it the right way</p>
     <button className='text-[#45C0CE]'>Explore More</button>
     </motion.div>

@@ -3,6 +3,7 @@ import React, {Component} from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Image from "next/image";
 
 class App extends Component{
   render(){
@@ -17,7 +18,7 @@ class App extends Component{
       cssEase: "linear"
     };
     return(
-      <div className="h-[1px] mb-[-50px]" >
+      <div className="h-[1px] mb-[-150px]" >
         
         <Slider {...settings}>
           <div className="p-0  ">

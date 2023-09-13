@@ -21,21 +21,21 @@ const NavBar = () => {
 
 <div className=' fixed font-sans z-40  left-0 top-0 w-full ease-in-out shadow-md duration-500 '>
   <div className=' w-full m-auto h-[75px] bg-white flex justify-evenly items-center p-4 text-black' >
-<Link href='/' > 
-          <div   className='w-[200px] justify-center bg-black'><Image src={Logo}/></div>
-        </Link>
+
+          <div   className='w-[200px] justify-center bg-black'> <Link href='/' > <Image src={Logo}/></Link></div>
+        
   <ul  className='hidden lg:flex md:text-xs  lg:text-lg  '>
     
     <li className=' p-4 pr-7 scroll-s hover:text-red-700 hover:scale-105'>
     <Link href='/'> Home</Link>
-    </li><Link href="/#aboutpage">
+    </li>
     <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 '>
-      About</li></Link>
-    <Link href="/#services">
-   <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 '>Service</li></Link><Link href=''>
-   <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 '>Portfolio</li></Link><Link href=''>
-   <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 '>Careers</li></Link><Link href=''>
-   <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 '>Blog</li></Link>
+    <Link href="/#aboutpage">About</Link></li>
+    
+   <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 '><Link href="/#services">Service</Link></li>
+   <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 '><Link href=''>Portfolio</Link></li>
+   <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 '><Link href=''>Careers </Link></li>
+   <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 '><Link href=''>Blog</Link></li>
   
   </ul>
   <div>
