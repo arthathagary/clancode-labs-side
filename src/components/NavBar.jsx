@@ -19,23 +19,23 @@ const NavBar = () => {
   }
   return (
 
-<div className=' fixed font-sans z-40  left-0 top-0 w-full ease-in-out shadow-md duration-500 '>
+<div className=' fixed  z-40  left-0 top-0 w-full ease-in-out shadow-md duration-500 '>
   <div className=' w-full m-auto h-[75px] bg-white flex justify-evenly items-center p-4 text-black' >
 
-          <div   className='w-[200px] justify-center bg-black'> <Link href='/' > <Image src={Logo}/></Link></div>
+          <div   className='w-[200px] justify-center bg-black'> <Link href='/' > <Image src={Logo} alt=''/></Link></div>
         
   <ul  className='hidden lg:flex md:text-xs  lg:text-lg  '>
     
-    <li className=' p-4 pr-7 scroll-s hover:text-red-700 hover:scale-105'>
+    <li className=' p-4 pr-7 scroll-s hover:text-red-700 hover:scale-105 font-medium'>
     <Link href='/'> Home</Link>
     </li>
-    <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 '>
+    <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105  font-medium'>
     <Link href="/#aboutpage">About</Link></li>
     
-   <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 '><Link href="/#services">Service</Link></li>
-   <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 '><Link href=''>Portfolio</Link></li>
-   <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 '><Link href=''>Careers </Link></li>
-   <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 '><Link href=''>Blog</Link></li>
+   <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 font-medium '><Link href="/#services">Service</Link></li>
+   <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 font-medium '><Link href=''>Portfolio</Link></li>
+   <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 font-medium '><Link href=''>Careers </Link></li>
+   <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 font-medium '><Link href=''>Blog</Link></li>
   
   </ul>
   <div>
