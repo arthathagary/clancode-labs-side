@@ -4,10 +4,12 @@ import {FaBars,FaTimes,FaArrowRight} from 'react-icons/fa'
 import Image from 'next/image'
 import Logo from '../../public/assets/images/logo.svg'
 import Link from 'next/link';
+import {useRouter } from 'next/navigation';
 
 
 
 const NavBar = () => {
+  const router = useRouter()
   const [nav,setNav] = useState(false);
 
 
@@ -42,7 +44,9 @@ const NavBar = () => {
     
   </div>
   <div>
-   <button className='font-mono hidden border-none  lg:flex items-center justify-center mt-2 type="button" class="focus:outline-none text-white bg-[#808080] hover:bg-black   text-xl rounded-lg f  px-3 py-2 mr-2 mb-2   '><Link href="/contact">Contact Us</Link></button>
+   <button className='font-mono hidden border-none  lg:flex items-center justify-center mt-2 type="button" class="focus:outline-none text-white bg-[#808080] hover:bg-black   text-xl rounded-lg f  px-3 py-2 mr-2 mb-2'onClick={()=>{
+    router.push('/contact')
+   }}>Contact Us</button>
    </div>
 
   
