@@ -37,9 +37,9 @@ const QaSection = () => {
     }
   },[isView])
   return (
-    <div>
-      <h2 className=' ml-[40%] mt-20 font-bold'>QaSection</h2>
-    <div ref={ref} className='md:h-[90vh] w-full md:px-32 px-8 mt-8 md:flex gap-16'>
+    <div ref={ref} className='lg:h-[90vh] w-full lg:px-32 px-8 mt-8 lg:flex flex-col gap-16'>
+    <h2 className='text-center font-bold'>Q and A</h2>
+    <div className='lg:flex lg:gap-16'>
     <motion.div
     variants={{
       hidden:{x:'-100vw',opacity:0},
@@ -87,6 +87,7 @@ const QaSection = () => {
     </motion.div>
     </div>
     </div>
+   
   )
 }
 
