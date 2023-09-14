@@ -37,6 +37,8 @@ const QaSection = () => {
     }
   },[isView])
   return (
+    <div>
+      <h2 className=' ml-[40%] mt-20 font-bold'>QaSection</h2>
     <div ref={ref} className='md:h-[90vh] w-full md:px-32 px-8 mt-8 md:flex gap-16'>
     <motion.div
     variants={{
@@ -84,7 +86,7 @@ const QaSection = () => {
         
     </motion.div>
     </div>
-   
+    </div>
   )
 }
 

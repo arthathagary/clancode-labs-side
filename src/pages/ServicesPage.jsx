@@ -6,6 +6,7 @@ import Image from "next/image";
 import webAppProjectImg from "../../public/assets/images/webAppProject.jpg";
 import ProjectImg from "../../public/assets/images/productDevelopment.jpg";
 import { motion, useInView, useAnimation } from "framer-motion";
+import {ImArrowRight } from "react-icons/im"
 
 const ServicesPage = () => {
   const initialHeading = "Building nothing but the best custom software";
@@ -60,11 +61,14 @@ const ServicesPage = () => {
     }
   }, [isView]);
   return (
+    <div className=" bg-[#DAF3F4]">
+    <h2 className="ml-[35%] font-bold"> Service Page</h2>
     <div
       ref={ref}
       id="services"
       className="md:h-[70vh] w-full md:px-32 px-8 md:mt-24 lg:mt-0 md:grid grid-cols-3 items-center  bg-[#DAF3F4] gap-4 py-6 md:py-0"
     >
+      
       <motion.div
         variants={{
           hidden: { y: "20vh", opacity: 0 },
@@ -103,7 +107,9 @@ const ServicesPage = () => {
         >
           Artificial Intelligence
         </h4>
-        <button>Learn More</button>
+        <div className='flex text-[#45C0CE]'>
+    <button className='text-[#45C0CE]'>Explore More</button>
+    <ImArrowRight className='mt-[5px] ml-1'/></div>
       </motion.div>
 
       <motion.div
@@ -138,6 +144,7 @@ const ServicesPage = () => {
     </div> */}
         <Image src={img} alt="" />
       </motion.div>
+    </div>
     </div>
   );
 };

@@ -3,7 +3,13 @@ import React, {Component} from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Logo1 from "../../public/assets/images/in.png"
+import Logo2 from "../../public/assets/images/twitter.png"
+import Logo3 from "../../public/assets/images/snap.png"
+import Logo4 from "../../public/assets/images/round.png"
+import Logo5 from "../../public/assets/images/logo s.png"
 import Image from "next/image";
+import Img1 from "../../public/assets/images/logo.svg"
 
 class App extends Component{
   render(){
@@ -21,23 +27,20 @@ class App extends Component{
       <div className="h-[1px] mb-[-150px]" >
         
         <Slider {...settings}>
-          <div className="p-0  ">
-            <img className="w-[45%] lg:w-[30%]  object-cover" src="https://www.freepnglogos.com/uploads/spotify-logo-png/spotify-icon-marilyn-scott-0.png" />
-          </div>
+     
           <div className="p-0   ">
-            <img  className="w-[50%] lg:w-[30%]  object-cover"  src="https://www.freepnglogos.com/uploads/logo-ig-png/logo-ig-logo-abundant-instagram-logo-simple-icon-1.png" />
-          </div>
+          <Image src={Logo1} className="w-[50%] lg:w-[30%]  object-cover" />   </div>
           <div className="p-0 ">
-            <img  className="w-[50%] lg:w-[30%]  object-cover"  src="https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-bird-symbols-png-logo-0.png" />
+            <Image alt="logo"   className="w-[50%] lg:w-[30%]  object-cover"  src={Logo2} />
           </div>
           <div className="p-0">
-            <img  className="w-[50%] lg:w-[30%]  object-cover"  src="https://www.freepnglogos.com/uploads/snapchat-logo-png-0.png" />
+            <Image alt="logo"   className="w-[50%] lg:w-[30%]  object-cover"  src={Logo3} />
           </div>
           <div className="p-0">
-            <img  className="w-[40%] lg:w-[30%]  object-cover"  src="https://www.freepnglogos.com/uploads/swirl-png/purple-swirl-transparent-png-art-2.png" />
+            <Image alt="logo"   className="w-[40%] lg:w-[30%]  object-cover"  src={Logo4} />
           </div>
           <div className="p-0">
-            <img  className="w-[40%] lg:w-[30%]  object-cover"  src="https://www.freepnglogos.com/uploads/shopee-logo-png/shopee-logo-shop-with-the-gentlemen-collection-and-win-the-shopee-0.png" />
+            <Image alt="logo"   className="w-[40%] lg:w-[30%]  object-cover"  src={Logo5} />
           </div>
         </Slider>
       </div>
