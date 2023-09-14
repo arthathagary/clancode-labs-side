@@ -35,8 +35,8 @@ const NavBar = () => {
     <Link href="/#aboutpage">About</Link></li>
     
    <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 font-medium '><Link href="/#services">Service</Link></li>
-   <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 font-medium '><Link href='/'>Portfolio</Link></li>
-   <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 font-medium '><Link href='/'>Careers </Link></li>
+   {/* <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 font-medium '><Link href='/'>Portfolio</Link></li>
+   <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 font-medium '><Link href='/'>Careers </Link></li> */}
    <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 font-medium '><Link href='/'>Blog</Link></li>
   
   </ul>
@@ -44,7 +44,7 @@ const NavBar = () => {
     
   </div>
   <div>
-   <button className='font-mono hidden border-none  lg:flex items-center justify-center mt-2 type="button" class="focus:outline-none text-white bg-[#808080] hover:bg-black   text-xl rounded-lg f  px-3 py-2 mr-2 mb-2'onClick={()=>{
+   <button className=' hidden border-none  lg:flex items-center justify-center mt-2 type="button" class="focus:outline-none text-white bg-[#808080] hover:bg-black   text-xl rounded-lg f  px-3 py-2 mr-2 mb-2'onClick={()=>{
     router.push('/contact')
    }}>Contact Us</button>
    </div>
@@ -54,7 +54,7 @@ const NavBar = () => {
 
   <div className=' lg:hidden z-50 block cursor-pointer '  onClick={handleHamClick}>
   
-        {!nav?<FaBars size={20}  className=''/>:<FaTimes size={20} className='mt-0 text-black bg-white'/>}
+        {!nav?<FaBars size={20} color='black' />:<FaTimes size={20} color='white' />}
        
   </div>
   {/* Mobile menu */}
@@ -70,7 +70,7 @@ const NavBar = () => {
    <li onClick={handleHamClick} className='p-4 text-2xl hover:text-gray-900   text-white '><Link href="#mvpsection">Portfolio</Link></li>
    <li onClick={handleHamClick} className='p-4 text-2xl hover:text-gray-900   text-white '><Link href="#">Careers</Link></li>
    <li onClick={handleHamClick} className='p-4 text-2xl hover:text-gray-900   text-white '><Link href="#">Blog</Link></li>
- <button onClick={handleHamClick} className='type="button" class="focus:outline-none text-black bg-[#808080] hover:bg-white hover:text-black focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-white dark:focus:ring-green-800" '>  <Link href="/contact">Contact Us</Link></button>
+ <button onClick={handleHamClick} className="text-black bg-[#808080] hover:bg-white hover:text-black focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-white dark:focus:ring-green-800">Contact Us</button>
    
   </ul>
   </div>

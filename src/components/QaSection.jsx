@@ -48,7 +48,7 @@ const QaSection = () => {
     initial="hidden"
     animate={controlAnimation}
     transition={{type:'spring',stiffness:30}}
-     className='bg-[#C5ECF0] p-8 md:w-[50%]'>
+     className='bg-[#C5ECF0] p-8 lg:w-[50%]'>
         <h4 className='text-2xl font-semibold mb-4'>General</h4>
         
             <div>
@@ -71,7 +71,7 @@ const QaSection = () => {
     initial="hidden"
     animate={controlAnimation}
     transition={{type:'spring',stiffness:30}}
-     className='bg-[#C5ECF0] p-8 md:w-[50%]'>
+     className='bg-[#C5ECF0] p-8 lg:w-[50%]'>
         <h4 className='text-2xl font-semibold mb-4'>Onboarding</h4>
         
             <div>

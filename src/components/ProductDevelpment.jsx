@@ -33,9 +33,9 @@ const ProductDevelpment = () => {
     <h3 className='font-bold text-2xl md:mb-4'>Product Development</h3>
     <h2 className='font-bold'>Innovative solutions Solid engineering</h2>
     <p className='pb-6'>We complement your vision of building the right product, by helping you build it the right way</p>
-    <div className='flex text-[#45C0CE]'>
-    <button className='text-[#45C0CE]'>Explore More</button>
-    <ImArrowRight className='mt-[5px] ml-1'/></div>
+    {/* <div className='flex text-[#45C0CE]'> */}
+    {/* <button className='text-[#45C0CE]'>Explore More</button> */}
+    {/* <ImArrowRight className='mt-[5px] ml-1'/></div> */}
     </motion.div>
         
     <motion.div
