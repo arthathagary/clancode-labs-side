@@ -35,9 +35,9 @@ const NavBar = () => {
     <Link href="/#aboutpage">About</Link></li>
     
    <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 font-medium '><Link href="/#services">Service</Link></li>
-   <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 font-medium '><Link href=''>Portfolio</Link></li>
-   <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 font-medium '><Link href=''>Careers </Link></li>
-   <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 font-medium '><Link href=''>Blog</Link></li>
+   <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 font-medium '><Link href='/'>Portfolio</Link></li>
+   <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 font-medium '><Link href='/'>Careers </Link></li>
+   <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 font-medium '><Link href='/'>Blog</Link></li>
   
   </ul>
   <div>
