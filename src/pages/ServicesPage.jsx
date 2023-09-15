@@ -3,8 +3,11 @@ import React, { useState, useEffect, useRef } from "react";
 import { GoStack } from "react-icons/go";
 import { FaAngular, FaReact, FaNodeJs } from "react-icons/fa";
 import Image from "next/image";
-import webAppProjectImg from "../../public/assets/images/webAppProject.jpg";
-import ProjectImg from "../../public/assets/images/productDevelopment.jpg";
+import webAppProjectImg from "../../public/assets/images/Web.png";
+import AppImg from "../../public/assets/images/app.png";
+import AiImg from "../../public/assets/images/ai.png";
+import UxImg from "../../public/assets/images/ux.png";
+import CloudImg from "../../public/assets/images/cloud.webp";
 import { motion, useInView, useAnimation } from "framer-motion";
 import {ImArrowRight } from "react-icons/im"
 
@@ -30,21 +33,29 @@ const ServicesPage = () => {
       case "uiBtn":
         setheading("ui");
         setPara("uipara");
-        setImg(ProjectImg);
+        setImg(UxImg);
         break;
 
       case "mdBtn":
         setheading("mobile");
         setPara("mobilePara");
-        setImg(webAppProjectImg);
+        setImg(AppImg);
         break;
 
       case "aiBtn":
         setheading("ai");
         setPara("aiPara");
-        setImg(ProjectImg);
+        setImg(AiImg);
         break;
       default:
+        break;
+
+        case "ciBtn":
+        setheading("ai");
+        setPara("aiPara");
+        setImg(CloudImg);
+        break;
+     
         break;
     }
   };
@@ -85,7 +96,7 @@ const ServicesPage = () => {
           className="bg-[#004450] px-6 py-4  font-bold text-[white] cursor-pointer hover:bg-white hover:text-[#004450]"
           onMouseOver={clickHandler}
         >
-          Software Development
+          Full Stack Development
         </h4>
         <h4
           id="uiBtn"
@@ -108,9 +119,16 @@ const ServicesPage = () => {
         >
           Artificial Intelligence
         </h4>
-        <div className='flex text-[#45C0CE]'>
-    <button className='text-[#45C0CE]'>Explore More</button>
-    <ImArrowRight className='mt-[5px] ml-1'/></div>
+        <h4
+          id="ciBtn"
+          className="bg-[#004450] px-6 py-4  font-bold text-[white] cursor-pointer hover:bg-white hover:text-[#004450]"
+          onMouseOver={clickHandler}
+        >
+          Cloud Computer 
+        </h4>
+        {/* <div className='flex text-[#45C0CE]'>
+    <button className='text-[#45C0CE]'> More</button>
+    <ImArrowRight className='mt-[5px] ml-1'/></div> */}
       </motion.div>
 
       <motion.div

@@ -21,12 +21,12 @@ const NavBar = () => {
   }
   return (
 
-<div className=' fixed  z-40  left-0 top-0 w-full ease-in-out shadow-md duration-500 '>
-  <div className=' w-full m-auto h-[75px] bg-white flex justify-evenly items-center p-4 text-black' >
+<div className=' fixed  z-40  left-0 top-0 w-full bg-white ease-in-out shadow-md duration-500  md:px-28 px-8 py-6 md:py-0'>
+  <div className=' w-full m-auto h-[75px]  flex justify-between items-center p-4 text-black' >
 
-          <div   className='w-[200px] justify-center bg-black'> <Link href='/' > <Image src={Logo} alt=''/></Link></div>
+          <div   className='w-[200px] justify-center'> <Link href='/' > <Image src={Logo} alt=''/></Link></div>
         
-  <ul className='hidden lg:flex md:text-xs  lg:text-lg  '>
+  <ul className='hidden lg:flex md:text-xs  lg:text-lg ml-10 '>
     
     <li className=' p-4 pr-7 scroll-s hover:text-red-700 hover:scale-105 font-medium'>
     <Link href='/'> Home</Link>
@@ -44,7 +44,7 @@ const NavBar = () => {
     
   </div>
   <div>
-   <button className=' hidden border-none  lg:flex group text-xl md:text-2xl font-medium bg-[#45C1CE] hover:bg-[#3a9fa8] py-2 px-5 rounded-full mt-0 md:self-start text-[#004450]'onClick={()=>{
+   <button className=' hidden border-none  lg:flex group text-xl  md:text-2xl font-medium bg-[#45C1CE] hover:bg-[#3a9fa8] py-2 px-5 rounded-full mt-0 md:self-start text-[#004450]'onClick={()=>{
     router.push('/contact')
    }}>Contact Us</button>
    </div>

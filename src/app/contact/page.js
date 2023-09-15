@@ -2,13 +2,15 @@ import React from 'react'
 import NavBar from '../../components/NavBar'
 import {BiPhoneCall,BiCurrentLocation,BiLocationPlus,BiLogoGmail} from 'react-icons/bi'
 import Footer from '../../pages/Footer'
+import ContactImg from '../../../public/assets/images/contact.jpg'
 
 const page = () => {
   return (
     <div className='width-full overflow-x-hidden bg-white h-[140vh] sm:h-[100vh]'>
         <NavBar/>
+        
  <div  className='md:mt-40 mt-32  flex flex-col justify-center ml-[5%] sm:ml-[10%] '>
-  <h1 className=' lg:text-[72px] text-[48px] md:text-[60px] md:mt-[-40px] mt-5 justify-start mb-10 lg:mb-4 font-bold text-blue-950  '>
+  <h1 className=' lg:text-[60px] text-[48px] md:text-[52px] md:mt-[-40px] mt-5 justify-start mb-10 lg:mb-4 font-bold text-blue-950  '>
     Send Us a message
   </h1>
   <p className='w-[90%] md:w-[60%] lg:w-[60%] xl:w-[40%] text-[16px] mb-2 text-black'>Send us a message and we will get back to you as soon as possible. We look forward to hearing from you.</p>

@@ -24,13 +24,56 @@ class App extends Component{
       cssEase: "linear"
     };
     return(
-      <div className="h-[1px] mb-[-150px] " >
-        
-        <Slider {...settings}>
-     
-          <div className="p-0   ">
+      <div className=" mb-[-250px] flex " >
+ 
+    <div className="max-w-xs mx-auto bg-transparent shadow-lg border-yellow-200 rounded-xl  overflow-hidden">
+      <Image
+        className="w-[40%] ml-[30%] object-cover"
+        src={Logo1}
+        alt="Card"
+      />
+      
+      <div className="px-6 py-4">
+        <h2 className="text-xl text-center font-semibold text-gray-800">Instagram</h2>
+        <p className="mt-2 text-center text-gray-600">
+          This is the content of your card. You can add more details here.
+        </p>
+      </div>
+    </div>
+
+    <div className="max-w-xs mx-auto bg-transparent shadow-2xl border-yellow-200 rounded-xl  overflow-hidden">
+      <Image
+        className="w-[40%] ml-[30%] object-cover"
+        src={Logo2}
+        alt="Card"
+      />
+      
+      <div className="px-6 py-4">
+        <h2 className="text-xl text-center font-semibold text-gray-800">Twitter</h2>
+        <p className="mt-2 text-center text-gray-600">
+          This is the content of your card. You can add more details here.
+        </p>
+      </div>
+    </div>
+
+    <div className="max-w-xs mx-auto bg-transparent shadow-2xl border-yellow-200 rounded-xl  overflow-hidden">
+      <Image
+        className="w-[40%] ml-[30%] object-cover"
+        src={Logo3}
+        alt="Card"
+      />
+      
+      <div className="px-6 py-4">
+        <h2 className="text-xl text-center font-semibold text-gray-800">SnapChat</h2>
+        <p className="mt-2 text-center text-gray-600">
+          This is the content of your card. You can add more details here.
+        </p>
+      </div>
+    </div>
+          {/* <div className="p-0">
           <Image src={Logo1} className="w-[50%] lg:w-[30%]  object-cover" />   </div>
-          <div className="p-0">
+
+          <div className="p-0 bg-slate-600 w-9">
             <Image alt="logo"   className="w-[50%] lg:w-[30%]  object-cover"  src={Logo2} />
           </div>
           <div className="p-0">
@@ -41,8 +84,8 @@ class App extends Component{
           </div>
           <div className="p-0">
             <Image alt="logo"   className="w-[40%] lg:w-[30%]  object-cover"  src={Logo5} />
-          </div>
-        </Slider>
+          </div> */}
+       
       </div>
     );
   }

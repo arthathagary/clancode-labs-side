@@ -2,7 +2,7 @@
 import React,{useEffect,useRef} from 'react'
 import {ImArrowRight} from 'react-icons/im'
 import Image from 'next/image'
-import productDevelopmentImg from '../../public/assets/images/productDevelopment.jpg'
+import productDevelopmentImg from '../../public/assets/images/development.webp'
 import {motion,useInView,useAnimation} from 'framer-motion';
 
 const ProductDevelpment = () => {
