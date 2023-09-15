@@ -26,13 +26,13 @@ const NavBar = () => {
 
           <div   className='w-[200px] justify-center bg-black'> <Link href='/' > <Image src={Logo} alt=''/></Link></div>
         
-  <ul  className='hidden lg:flex md:text-xs  lg:text-lg  '>
+  <ul className='hidden lg:flex md:text-xs  lg:text-lg  '>
     
     <li className=' p-4 pr-7 scroll-s hover:text-red-700 hover:scale-105 font-medium'>
     <Link href='/'> Home</Link>
     </li>
     <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105  font-medium'>
-    <Link href="/#aboutpage">About</Link></li>
+    <Link href="/#about">About</Link></li>
     
    <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 font-medium '><Link href="/#services">Service</Link></li>
    {/* <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 font-medium '><Link href='/'>Portfolio</Link></li>
@@ -44,7 +44,7 @@ const NavBar = () => {
     
   </div>
   <div>
-   <button className=' hidden border-none  lg:flex items-center justify-center mt-2 type="button" class="focus:outline-none text-white bg-[#808080] hover:bg-black   text-xl rounded-lg f  px-3 py-2 mr-2 mb-2'onClick={()=>{
+   <button className=' hidden border-none  lg:flex group text-xl md:text-2xl font-medium bg-[#45C1CE] hover:bg-[#3a9fa8] py-2 px-5 rounded-full mt-0 md:self-start text-[#004450]'onClick={()=>{
     router.push('/contact')
    }}>Contact Us</button>
    </div>
@@ -58,19 +58,21 @@ const NavBar = () => {
        
   </div>
   {/* Mobile menu */}
-  <div  className={nav ? ' lg:hidden text-black  absolute top-0 right-0 bottom-0 left-0 flex justify-center items-center w-full h-screen bg-black  text-center ease-in-out duration-500':'lg:hidden  absolute top-0 right-0 bottom-0 left-[-100%] flex justify-center items-center w-full h-screen bg-slate-500  text-center ease-in-out duration-500 '}>
-  <ul>
-    <li onClick={handleHamClick} className='p-4 text-2xl hover:text-gray-900  text-white '>
+  <div   className={nav ? ' lg:hidden text-black  absolute top-0 right-0 bottom-0 left-0 flex justify-center items-center w-full h-screen bg-black  text-center ease-in-out duration-500':'lg:hidden  absolute top-0 right-0 bottom-0 left-[-100%] flex justify-center items-center w-full h-screen bg-slate-500  text-center ease-in-out duration-500 ' }>
+  <ul onClick={handleHamClick}>
+    <li  className='p-4 text-2xl hover:text-gray-900  text-white '>
       <a href="/">Home</a>
     </li>
-    <li onClick={handleHamClick} className='p-4 text-2xl hover:text-gray-900  text-white  '>
+    <li  className='p-4 text-2xl hover:text-gray-900  text-white  '>
       <Link href="/#about">About</Link>
     </li>
-   <li onClick={handleHamClick} className='p-4 text-2xl hover:text-gray-900   text-white '><Link href="/#services">Service</Link></li>
-   <li onClick={handleHamClick} className='p-4 text-2xl hover:text-gray-900   text-white '><Link href="#mvpsection">Portfolio</Link></li>
-   <li onClick={handleHamClick} className='p-4 text-2xl hover:text-gray-900   text-white '><Link href="#">Careers</Link></li>
-   <li onClick={handleHamClick} className='p-4 text-2xl hover:text-gray-900   text-white '><Link href="#">Blog</Link></li>
- <button onClick={handleHamClick} className="text-black bg-[#808080] hover:bg-white hover:text-black focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-white dark:focus:ring-green-800">Contact Us</button>
+   <li  className='p-4 text-2xl hover:text-gray-900   text-white '><Link href="/#services">Service</Link></li>
+   <li  className='p-4 text-2xl hover:text-gray-900   text-white '><Link href="#mvpsection">Portfolio</Link></li>
+   <li  className='p-4 text-2xl hover:text-gray-900   text-white '><Link href="#">Careers</Link></li>
+   <li  className='p-4 text-2xl hover:text-gray-900   text-white '><Link href="#">Blog</Link></li>
+ <button  className="lg:flex group text-xl md:text-2xl font-medium bg-[#45C1CE] hover:bg-[#3a9fa8] py-3 px-5 rounded-full mt-2 md:self-start text-[#004450]"onClick={()=>{
+    router.push('/contact')
+   }} >Contact Us</button>
    
   </ul>
   </div>

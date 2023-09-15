@@ -24,13 +24,13 @@ class App extends Component{
       cssEase: "linear"
     };
     return(
-      <div className="h-[1px] mb-[-150px]" >
+      <div className="h-[1px] mb-[-150px] " >
         
         <Slider {...settings}>
      
           <div className="p-0   ">
           <Image src={Logo1} className="w-[50%] lg:w-[30%]  object-cover" />   </div>
-          <div className="p-0 ">
+          <div className="p-0">
             <Image alt="logo"   className="w-[50%] lg:w-[30%]  object-cover"  src={Logo2} />
           </div>
           <div className="p-0">

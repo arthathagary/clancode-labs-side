@@ -61,14 +61,15 @@ const ServicesPage = () => {
     }
   }, [isView]);
   return (
-    <div className=" bg-[#DAF3F4]">
-    <h2 className="ml-[35%] font-bold"> Service Page</h2>
+
+    
     <div
       ref={ref}
       id="services"
-      className="md:h-[70vh] w-full md:px-32 px-8 md:mt-24 lg:mt-0 md:grid grid-cols-3 items-center  bg-[#DAF3F4] gap-4 py-6 md:py-0"
+      className="md:h-[70vh] w-full md:px-32 px-8 md:mt-24 lg:mt-0  items-center  bg-[#DAF3F4] gap-4 py-6 md:py-0"
     >
-      
+      <h2 className=" text-center font-bold pt-5 " > Service Page</h2>
+      <div className="md:grid grid-cols-3 items-center">
       <motion.div
         variants={{
           hidden: { y: "20vh", opacity: 0 },
