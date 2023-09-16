@@ -3,8 +3,8 @@ import React, { useState, useEffect, useRef } from "react";
 import { GoStack } from "react-icons/go";
 import { FaAngular, FaReact, FaNodeJs } from "react-icons/fa";
 import Image from "next/image";
-import webAppProjectImg from "../../public/assets/images/Web.png";
-import AppImg from "../../public/assets/images/app.png";
+import webAppProjectImg from "../../public/assets/images/webApp.webp";
+import AppImg from "../../public/assets/images/app.webp";
 import AiImg from "../../public/assets/images/ai.png";
 import UxImg from "../../public/assets/images/ux.png";
 import CloudImg from "../../public/assets/images/cloud.webp";
@@ -161,7 +161,7 @@ const ServicesPage = () => {
     <FaReact size={60} color='#81E0FA'/>
     <FaNodeJs size={60} color='#333333'/>
     </div> */}
-        <Image src={img} alt="" />
+        <Image src={img} alt=""  />
       </motion.div>
     </div>
     </div>
