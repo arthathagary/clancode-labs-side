@@ -24,11 +24,11 @@ class App extends Component{
       cssEase: "linear"
     };
     return(
-      <div className=" mb-[-250px] flex " >
+      <div className=" mb-[-250px] lg:flex grid grid-cols-1 grid-rows-1" >
  
-    <div className="max-w-xs mx-auto bg-transparent shadow-lg border-yellow-200 rounded-xl  overflow-hidden">
+    <div className="max-w-xs mx-auto mb-16 lg:mb-0 bg-[#DAF3F4]  shadow-2xl border-yellow-200 rounded-xl  overflow-hidden">
       <Image
-        className="w-[40%] ml-[30%] object-cover"
+        className="w-[40%] mt-3 ml-[30%] object-cover"
         src={Logo1}
         alt="Card"
       />
@@ -41,7 +41,7 @@ class App extends Component{
       </div>
     </div>
 
-    <div className="max-w-xs mx-auto bg-transparent shadow-2xl border-yellow-200 rounded-xl  overflow-hidden">
+    <div className="max-w-xs mx-auto mb-16 lg:mb-0 bg-[#DAF3F4] shadow-2xl border-yellow-200 rounded-xl  overflow-hidden">
       <Image
         className="w-[40%] ml-[30%] object-cover"
         src={Logo2}
@@ -56,9 +56,9 @@ class App extends Component{
       </div>
     </div>
 
-    <div className="max-w-xs mx-auto bg-transparent shadow-2xl border-yellow-200 rounded-xl  overflow-hidden">
+    <div className="max-w-xs mx-auto bg-[#DAF3F4] shadow-2xl border-yellow-200 rounded-xl  overflow-hidden">
       <Image
-        className="w-[40%] ml-[30%] object-cover"
+        className="w-[40%] ml-[30%] mt-3 object-cover"
         src={Logo3}
         alt="Card"
       />

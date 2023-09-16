@@ -20,7 +20,7 @@ const MvpSection = () => {
   return (
     <div id="mvpsection"
       ref={ref}
-      className="md:flex md:h-[70vh] w-full md:px-28 px-8 py-6 md:py-0 md:mt-20 lg:mt-0 justify-center items-center gap-8"
+      className="md:flex md:h-[70vh] w-full md:px-28 px-8 py-6 md:py-0 md:mt-20 mb-20 mt-10 lg:mt-0 justify-center items-center gap-8"
     >
       <motion.div
         variants={{

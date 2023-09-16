@@ -2,78 +2,95 @@ import React from 'react'
 import NavBar from '../../components/NavBar'
 import {BiPhoneCall,BiCurrentLocation,BiLocationPlus,BiLogoGmail} from 'react-icons/bi'
 import Footer from '../../pages/Footer'
-import ContactImg from '../../../public/assets/images/contact.jpg'
+import ContactImg from '../../../public/assets/images/ContactUs.png'
+
+import Image from 'next/image'
 
 const page = () => {
   return (
+    
     <div className='width-full overflow-x-hidden bg-white h-[140vh] sm:h-[100vh]'>
         <NavBar/>
-        
+<div className='lg:flex grid grid-col'>
  <div  className='md:mt-40 mt-32  flex flex-col justify-center ml-[5%] sm:ml-[10%] '>
-  <h1 className=' lg:text-[60px] text-[48px] md:text-[52px] md:mt-[-40px] mt-5 justify-start mb-10 lg:mb-4 font-bold text-blue-950  '>
+ 
+  <h1 className=' lg:text-[52px] text-[48px] md:text-[48px] md:mt-[-40px] mt-5 justify-start mb-10 lg:mb-4 font-bold text-blue-950 z-10  '>
     Send Us a message
   </h1>
-  <p className='w-[90%] md:w-[60%] lg:w-[60%] xl:w-[40%] text-[16px] mb-2 text-black'>Send us a message and we will get back to you as soon as possible. We look forward to hearing from you.</p>
- <div className='sm:grid ml-[-20px] lg:w-[70%] md:grid-cols-2 md:grid-rows-3 flex flex-col gap-[-20px]'>
- <div  className='m-0 flex flex-col p-4 mt-4 '>
-  <label className=''>
+  <p className=' z-10 w-[90%] md:w-[60%] lg:w-[60%] xl:w-[70%] text-[16px] mb-2 text-black '>Send us a message and we will get back to you as soon as possible. We look forward to hearing from you.</p>
+ <div className='sm:grid ml-[-20px] lg:w-[110%] md:grid-cols-2 md:grid-rows-3 flex flex-col gap-[-20px]'>
+ 
+ <div  className='m-0 flex flex-col p-4 mt-4 z-10 mr-10 '>
+  <label className=' '>
     Name
   </label>
   <input
-      class="peer h-[50px] lg:w-[250px] w-full border-b border-blue-gray-200 bg-transparent  font-sans text-md font-normal text-black outline outline-0 transition-all placeholder-shown:border-b border-black-50 focus:border-blue focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
+      class="peer z-10 h-[50px]  lg:w-[200px] w-full border-b border-blue-gray-200 bg-transparent  font-sans text-md font-normal text-black outline outline-0 transition-all placeholder-shown:border-b border-black-50 focus:border-blue focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
       placeholder="Enter The Name "
     />
  </div>
- <div className='m-0 flex flex-col p-4 mt-4 lg:ml-[-150px]'>
+
+ <div className='m-0 z-10 flex flex-col p-4 mt-4 lg:ml-[-150px]'>
   <label className=''>
   Your website
   </label><input
-      class="peer h-[50px] lg:w-[250px] w-full border-b  border-blue-gray-200 bg-transparent  font-sans text-md font-normal text-black outline outline-0 transition-all placeholder-shown:border-b border-black-50 focus:border-blue focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
+      class="peer z-10 h-[50px] lg:w-[200px] w-full border-b  border-blue-gray-200 bg-transparent  font-sans text-md font-normal text-black outline outline-0 transition-all placeholder-shown:border-b border-black-50 focus:border-blue focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
       placeholder="Enter Your website link "
     />
  </div>
- <div className='m-0 flex flex-col p-4 mt-0 '>
-  <label className='mb-2'>
+
+ <div className='m-0 z-10 flex flex-col p-4 mt-0 '>
+  <label className='mb-2 '>
   E-mail
   </label><input
-      class="peer h-[50px] lg:w-[250px] w-full border-b border-blue-gray-200 bg-transparent  font-sans text-md font-normal text-black outline outline-0 transition-all placeholder-shown:border-b border-black-50 focus:border-blue focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
+      class="peer h-[50px] z-10 lg:w-[200px] w-full border-b border-blue-gray-200 bg-transparent  font-sans text-md font-normal text-black outline outline-0 transition-all placeholder-shown:border-b border-black-50 focus:border-blue focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
       placeholder="Enter Email Address "
     />
  </div>
- <div className='m-0 flex flex-col p-4 mt-0 lg:ml-[-150px] '>
-  <label className='mb-2'>
+
+ <div className='m-0 flex z-10 flex-col p-4 mt-0 lg:ml-[-150px] '>
+  <label className='mb-2 '>
   Phone
   </label><input
-      class="peer h-[50px] lg:w-[250px] w-full border-b   border-blue-gray-200 bg-transparent  font-sans text-md font-normal text-black outline outline-0 transition-all placeholder-shown:border-b border-black-50 focus:border-blue focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
+      class="peer h-[50px] z-10 lg:w-[200px] w-full border-b   border-blue-gray-200 bg-transparent  font-sans text-md font-normal text-black outline outline-0 transition-all placeholder-shown:border-b border-black-50 focus:border-blue focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
       placeholder="Enter Phone Number "
     />
  </div>
- <div className='m-0 flex flex-col p-4 mt-0 sm:mb-0 '>
+
+ <div className='m-0 flex z-10 flex-col p-4 mt-0 sm:mb-0 '>
   <label className='mb-2'>
   Your Message
   </label>
   <input
-      class="peer lg:w-[250px] h-[50px] w-full border-b border-blue-gray-200 bg-transparent  font-sans text-md font-normal text-black outline outline-0 transition-all placeholder-shown:border-b border-black-50 focus:border-blue focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
+      class="peer lg:w-[200px]  h-[50px] w-full border-b border-blue-gray-200 bg-transparent  font-sans text-md font-normal text-black outline outline-0 transition-all placeholder-shown:border-b border-black-50 focus:border-blue focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
       placeholder="Message "
     />
-    
  </div>
+
  </div>
- <div className='p-4 ml-[-30px]'>
- <input type="checkbox" className='w-10 bg-black rounded-md ' id="tickButton" name="tick" value="selected"></input>
- 
- <label for="tickButton" className='mb-10 ml-[-5px] '>Subscribe to ClanCodeLabs</label></div>
+
+
  <div>
+ <div className='p-4 ml-[-30px] z-10'>
+ <input type="checkbox" className='w-10 z-10 bg-black rounded-md ' id="tickButton" name="tick" value="selected"></input>
+ <label for="tickButton" className='mb-10 z-10 ml-[-5px] '>Subscribe to ClanCodeLabs</label>
+ </div>
 
-
-  <button className=' py-2 ml-[-10px] px-[45%] md:px-24 mb-16 mt-4 rounded-lg accent-black bg-yellow-400 text-black ' > Send</button>
-  
+ <div className='z-10'>
+  <button className=' py-2 ml-[-10px]  px-[45%] md:px-24 mb-16 mt-4 rounded-lg  accent-black bg-yellow-400 text-black ' > Send</button>
+ </div>
+ </div>
+ </div>
+ <div className='lg:w-[50%] -mt-28 lg:mt-28 z-50 '>
+  <Image src={ContactImg}  alt='contact us'/>
  </div>
  
  </div>
+ 
 
 
-        <Footer/>
+        <Footer className=' z-10'/>
+   
    
     </div>
   )
