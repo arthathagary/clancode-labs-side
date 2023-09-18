@@ -43,7 +43,7 @@ const page = () => {
   <label className='mb-2 '>
   E-mail
   </label><input
-      class="peer h-[50px] z-10 lg:w-[200px] w-full border-b border-blue-gray-200 bg-transparent  font-sans text-md font-normal text-black outline outline-0 transition-all placeholder-shown:border-b border-black-50 focus:border-blue focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
+      className="peer h-[50px] z-10 lg:w-[200px] w-full border-b border-blue-gray-200 bg-transparent  font-sans text-md font-normal text-black outline outline-0 transition-all placeholder-shown:border-b border-black-50 focus:border-blue focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
       placeholder="Enter Email Address "
     />
  </div>
@@ -62,7 +62,7 @@ const page = () => {
   Your Message
   </label>
   <input
-      class="peer lg:w-[200px]  h-[50px] w-full border-b border-blue-gray-200 bg-transparent  font-sans text-md font-normal text-black outline outline-0 transition-all placeholder-shown:border-b border-black-50 focus:border-blue focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
+      className="peer lg:w-[200px]  h-[50px] w-full border-b border-blue-gray-200 bg-transparent  font-sans text-md font-normal text-black outline outline-0 transition-all placeholder-shown:border-b border-black-50 focus:border-blue focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
       placeholder="Message "
     />
  </div>
@@ -73,7 +73,7 @@ const page = () => {
  <div>
  <div className='p-4 ml-[-30px] z-10'>
  <input type="checkbox" className='w-10 z-10 bg-black rounded-md ' id="tickButton" name="tick" value="selected"></input>
- <label for="tickButton" className='mb-10 z-10 ml-[-5px] '>Subscribe to ClanCodeLabs</label>
+ <label htmlFor="tickButton" className='mb-10 z-10 ml-[-5px] '>Subscribe to ClanCodeLabs</label>
  </div>
 
  <div className='z-10'>
