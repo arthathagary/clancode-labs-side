@@ -44,8 +44,8 @@ const NavBar = () => {
     
   </div>
   <div>
-   <li className=' hidden border-none  lg:flex group text-xl  md:text-xl font-medium bg-[#45C1CE] hover:bg-[#3a9fa8] py-3 px-4 rounded-full mt-0 md:self-start text-[#004450]'
-   ><Link href='/contact'>Contact Us </Link></li>
+   <button onClick={()=>{router.push('/contact')}}><li className=' hidden border-none  lg:flex group text-xl  md:text-xl font-medium bg-[#45C1CE] hover:bg-[#3a9fa8] py-3 px-4 rounded-full mt-0 md:self-start text-[#004450]'
+   >Contact Us</li></button>
    </div>
 
   
