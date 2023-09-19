@@ -77,11 +77,11 @@ const page = () => {
  </div>
 
  <div className='z-10'>
-  <button className=' py-2 ml-[-10px]  px-[45%] md:px-24 mb-16 mt-4 rounded-lg  accent-black bg-yellow-400 text-black ' > Send</button>
+  <button className=' py-2 ml-[-10px]  px-[45%] md:px-24 mb-16 mt-4 rounded-lg  accent-black  bg-[#45C1CE] text-black ' > Send</button>
  </div>
  </div>
  </div>
- <div className='lg:w-[50%] -mt-28 lg:mt-28 z-50 '>
+ <div className='lg:w-[50%] -mt-28 lg:mt-28 z-10 '>
   <Image src={ContactImg}  alt='contact us'/>
  </div>
  

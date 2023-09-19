@@ -6,7 +6,7 @@ import Image from "next/image";
 import webAppProjectImg from "../../public/assets/images/webApp.webp";
 import AppImg from "../../public/assets/images/app.webp";
 import AiImg from "../../public/assets/images/ai.png";
-import UxImg from "../../public/assets/images/ux.png";
+import UxImg from "../../public/assets/images/ui.webp";
 import CloudImg from "../../public/assets/images/cloud.webp";
 import { motion, useInView, useAnimation } from "framer-motion";
 import {ImArrowRight } from "react-icons/im"
@@ -124,7 +124,7 @@ const ServicesPage = () => {
           className="bg-[#004450] px-6 py-4  font-bold text-[white] cursor-pointer hover:bg-white hover:text-[#004450]"
           onMouseOver={clickHandler}
         >
-          Cloud Computer 
+         cloud Native Development
         </h4>
         {/* <div className='flex text-[#45C0CE]'>
     <button className='text-[#45C0CE]'> More</button>
