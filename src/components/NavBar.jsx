@@ -66,8 +66,8 @@ const NavBar = () => {
       <Link href="/#about">About</Link>
     </li>
    <li  className='p-4 text-2xl hover:text-gray-900   text-white '><Link href="/#services">Service</Link></li>
-   <li  className='p-4 text-2xl hover:text-gray-900   text-white '><Link href="#mvpsection">Portfolio</Link></li>
-   <li  className='p-4 text-2xl hover:text-gray-900   text-white '><Link href="#">Careers</Link></li>
+   {/* <li  className='p-4 text-2xl hover:text-gray-900   text-white '><Link href="#mvpsection">Portfolio</Link></li>
+   <li  className='p-4 text-2xl hover:text-gray-900   text-white '><Link href="#">Careers</Link></li> */}
    <li  className='p-4 text-2xl hover:text-gray-900   text-white '><a target="_blank" href="https://mahfoozahamed.medium.com/">Blog</a></li>
  <button  className="lg:flex group text-xl md:text-2xl font-medium bg-[#45C1CE] hover:bg-[#3a9fa8] py-3 px-5 rounded-full mt-2 md:self-start text-[#004450]"onClick={()=>{
     router.push('/contact')
