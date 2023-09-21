@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { GoStack } from "react-icons/go";
 import { FaAngular, FaReact, FaNodeJs } from "react-icons/fa";
 import Image from "next/image";
-import webAppProjectImg from "../../public/assets/images/web.webp";
+import webAppProjectImg from "../../public/assets/images/Web.webp";
 import AppImg from "../../public/assets/images/app.webp";
 import AiImg from "../../public/assets/images/ai.webp";
 import UxImg from "../../public/assets/images/ui.webp";
