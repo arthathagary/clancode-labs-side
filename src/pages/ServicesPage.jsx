@@ -124,7 +124,7 @@ const ServicesPage = () => {
           className="bg-[#004450] px-6 py-4  font-bold text-[white] cursor-pointer hover:bg-white hover:text-[#004450]"
           onMouseOver={clickHandler}
         >
-         cloud Native Development
+         Cloud Native Development
         </h4>
         {/* <div className='flex text-[#45C0CE]'>
     <button className='text-[#45C0CE]'> More</button>
