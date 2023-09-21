@@ -77,7 +77,7 @@ const ServicesPage = () => {
     <div
       ref={ref}
       id="services"
-      className="md:h-[85vh] lg:h-[75vh] w-full md:px-32 px-8 md:mt-24 lg:mt-20  items-center  bg-[#DAF3F4] gap-4 py-6 md:py-0"
+      className="md:h-[85vh] lg:h-[75vh] w-full md:px-32 px-8 md:mt-24 lg:mt-20  items-center  bg-[#DAF3F4] gap-4 py-6 md:py-0 scroll-my-20"
     >
       <h2 className=" text-center font-bold pt-5 " > Service Page</h2>
       <div className="md:grid grid-cols-3 items-center">
