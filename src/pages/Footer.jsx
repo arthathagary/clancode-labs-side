@@ -17,8 +17,8 @@ const Footer = () => {
 
         </div>
 
-        <nav className='z-10 lg:ml-[45%] lg:mb-5'>
-          <ul className='lg:flex z-10 md:gap  lg:0 grid grid-cols-4 grid-rows-4 -mb-12  '>
+        <nav className='z-10  lg:mb-5'>
+          <ul className='lg:flex z-10  grid grid-cols-4 gap-3  '>
             <li className='text-[white] font-medium'>Home</li>
             <li className='text-[white] font-medium'>About</li>
             <li className='text-[white] font-medium'>Services</li>
