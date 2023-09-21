@@ -25,7 +25,7 @@ const page = () => {
     Name
   </label>
   <input
-      class="peer z-10 h-[50px]  lg:w-[200px] w-full border-b border-blue-gray-200 bg-transparent  font-sans text-md font-normal text-black outline outline-0 transition-all placeholder-shown:border-b border-black-50 focus:border-blue focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
+      className="peer z-10 h-[50px]  lg:w-[200px] w-full border-b border-blue-gray-200 bg-transparent  font-sans text-md font-normal text-black outline outline-0 transition-all placeholder-shown:border-b border-black-50 focus:border-blue focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
       placeholder="Enter The Name "
     />
  </div>
@@ -34,7 +34,7 @@ const page = () => {
   <label className=''>
   Your website
   </label><input
-      class="peer z-10 h-[50px] lg:w-[200px] w-full border-b  border-blue-gray-200 bg-transparent  font-sans text-md font-normal text-black outline outline-0 transition-all placeholder-shown:border-b border-black-50 focus:border-blue focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
+      className="peer z-10 h-[50px] lg:w-[200px] w-full border-b  border-blue-gray-200 bg-transparent  font-sans text-md font-normal text-black outline outline-0 transition-all placeholder-shown:border-b border-black-50 focus:border-blue focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
       placeholder="Enter Your website link "
     />
  </div>
@@ -52,7 +52,7 @@ const page = () => {
   <label className='mb-2 '>
   Phone
   </label><input
-      class="peer h-[50px] z-10 lg:w-[200px] w-full border-b   border-blue-gray-200 bg-transparent  font-sans text-md font-normal text-black outline outline-0 transition-all placeholder-shown:border-b border-black-50 focus:border-blue focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
+      className="peer h-[50px] z-10 lg:w-[200px] w-full border-b   border-blue-gray-200 bg-transparent  font-sans text-md font-normal text-black outline outline-0 transition-all placeholder-shown:border-b border-black-50 focus:border-blue focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
       placeholder="Enter Phone Number "
     />
  </div>

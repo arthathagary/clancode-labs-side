@@ -3,7 +3,7 @@ import React, {Component} from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Logo1 from "../../public/assets/images/in.png"
+import Logo1 from "../../public/assets/images/Card1.png"
 import Logo2 from "../../public/assets/images/twitter.png"
 import Logo3 from "../../public/assets/images/snap.png"
 import Logo4 from "../../public/assets/images/round.png"
@@ -28,13 +28,13 @@ class App extends Component{
  
     <div className="max-w-xs mx-auto mb-16 lg:mb-0 bg-[#DAF3F4] h-[400px]   shadow-xl border-yellow-200 rounded-xl  overflow-hidden">
       <Image
-        className="w-[40%]  mt-9 ml-[30%] object-cover"
+        className="w-[40%]  mt-20 ml-[30%] object-cover"
         src={Logo1}
         alt="Card"
       />
       
       <div className="px-6 py-4">
-        <h2 className="text-xl text-center font-semibold text-gray-800">Instagram</h2>
+        <h2 className="text-xl text-center font-semibold text-gray-800">Mr Snow Removal</h2>
         <p className="mt-5 text-center text-gray-600">
           This is the content of your card. You can add more details here.
         </p>
