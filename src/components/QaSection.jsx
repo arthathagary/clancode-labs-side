@@ -37,7 +37,9 @@ const QaSection = () => {
     }
   },[isView])
   return (
-    <div ref={ref} className='md:h-[70vh] w-full md:px-32 px-8 mt-8 md:flex gap-16'>
+    <div ref={ref} className='lg:h-[90vh] w-full lg:px-32 px-8 mt-8 lg:flex flex-col gap-16'>
+    <h2 className='text-center font-bold'>Q and A</h2>
+    <div className='lg:flex lg:gap-16'>
     <motion.div
     variants={{
       hidden:{x:'-100vw',opacity:0},
@@ -46,7 +48,7 @@ const QaSection = () => {
     initial="hidden"
     animate={controlAnimation}
     transition={{type:'spring',stiffness:30}}
-     className='bg-[#C5ECF0] p-8 md:w-[50%]'>
+     className='bg-[#C5ECF0] p-8 lg:w-[50%]'>
         <h4 className='text-2xl font-semibold mb-4'>General</h4>
         
             <div>
@@ -69,7 +71,7 @@ const QaSection = () => {
     initial="hidden"
     animate={controlAnimation}
     transition={{type:'spring',stiffness:30}}
-     className='bg-[#C5ECF0] p-8 md:w-[50%]'>
+     className='bg-[#C5ECF0] p-8 lg:w-[50%]'>
         <h4 className='text-2xl font-semibold mb-4'>Onboarding</h4>
         
             <div>
@@ -83,6 +85,7 @@ const QaSection = () => {
            
         
     </motion.div>
+    </div>
     </div>
    
   )
