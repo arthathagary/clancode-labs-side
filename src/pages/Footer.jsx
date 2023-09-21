@@ -7,12 +7,11 @@ const Footer = () => {
   return (
     <footer className='w-full px-20 lg:px-32 xl:px-10 z-20 lg:justify-evenly  lg:flex items-center bg-[#004450] lg:py-6 ' >
         <div className='text-center    z-10'>
-            <div className='w-60 ml-[5%]  md:ml-[30%] lg:ml-0 '><Image src={whiteLogo} alt='logo'/></div>
-            {/* <h6 className='text-[white] mb-4'>Product engineering simplified</h6>  */}
+            <div className='flex justify-center items-center'  ><Image src={whiteLogo} width={260} alt='logo'/></div>
             <div className='flex gap-4 mb-4 justify-center mt-2'>
-            <FaLinkedin size={20} color='white' />
-            <FaFacebookSquare size={20} color='white' />
-            <AiFillInstagram size={20} color='white' />  
+            <FaLinkedin size={20} color='white'/>
+            <FaFacebookSquare size={20} color='white'/>
+            <AiFillInstagram size={20} color='white'/>  
             </div>
 
         </div>
