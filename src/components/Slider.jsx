@@ -28,14 +28,16 @@ class App extends Component{
  
     <div className="max-w-xs mx-auto mb-16 lg:mb-0 bg-[#DAF3F4] h-[400px]   shadow-xl border-yellow-200 rounded-xl  overflow-hidden">
       <Image
-        className=" mt-20  object-cover"
+        className=" mt-10  object-cover"
         src={Logo1}
         alt="Card"
       />
       
       <div className="px-6 py-4">
         <h2 className="text-xl text-center font-semibold text-gray-800">Mr Snow Removal</h2>
-       
+        <p className=" text-center text-gray-600">
+          This is the content of your card. You can add more details here.
+        </p>
       </div>
     </div>
 
