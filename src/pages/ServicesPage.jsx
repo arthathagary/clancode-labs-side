@@ -3,9 +3,13 @@ import React, { useState, useEffect, useRef } from "react";
 import { GoStack } from "react-icons/go";
 import { FaAngular, FaReact, FaNodeJs } from "react-icons/fa";
 import Image from "next/image";
-import webAppProjectImg from "../../../public/assets/images/webAppProject.jpg";
-import ProjectImg from "../../../public/assets/images/productDevelopment.jpg";
+import webAppProjectImg from "../../public/assets/images/Web.webp";
+import AppImg from "../../public/assets/images/app.webp";
+import AiImg from "../../public/assets/images/ai.webp";
+import UxImg from "../../public/assets/images/ui.webp";
+import CloudImg from "../../public/assets/images/cloud.webp";
 import { motion, useInView, useAnimation } from "framer-motion";
+import {ImArrowRight } from "react-icons/im"
 
 const ServicesPage = () => {
   const initialHeading = "Building nothing but the best custom software";
@@ -29,21 +33,29 @@ const ServicesPage = () => {
       case "uiBtn":
         setheading("ui");
         setPara("uipara");
-        setImg(ProjectImg);
+        setImg(UxImg);
         break;
 
       case "mdBtn":
         setheading("mobile");
         setPara("mobilePara");
-        setImg(webAppProjectImg);
+        setImg(AppImg);
         break;
 
       case "aiBtn":
         setheading("ai");
         setPara("aiPara");
-        setImg(ProjectImg);
+        setImg(AiImg);
         break;
       default:
+        break;
+
+        case "ciBtn":
+        setheading("ai");
+        setPara("aiPara");
+        setImg(CloudImg);
+        break;
+     
         break;
     }
   };
@@ -60,11 +72,15 @@ const ServicesPage = () => {
     }
   }, [isView]);
   return (
+
+    
     <div
       ref={ref}
       id="services"
-      className="md:h-[70vh] w-full md:px-32 px-8 md:mt-24 lg:mt-0 md:grid grid-cols-3 items-center  bg-[#DAF3F4] gap-4 py-6 md:py-0"
+      className="md:h-[85vh] lg:h-[75vh] w-full md:px-32 px-8 md:mt-24 lg:mt-20  items-center  bg-[#DAF3F4] gap-4 py-6 md:py-0 scroll-my-20"
     >
+      <h2 className=" text-center font-bold pt-5 " > Service Page</h2>
+      <div className="md:grid grid-cols-3 items-center">
       <motion.div
         variants={{
           hidden: { y: "20vh", opacity: 0 },
@@ -80,7 +96,7 @@ const ServicesPage = () => {
           className="bg-[#004450] px-6 py-4  font-bold text-[white] cursor-pointer hover:bg-white hover:text-[#004450]"
           onMouseOver={clickHandler}
         >
-          Software Development
+          Full Stack Development
         </h4>
         <h4
           id="uiBtn"
@@ -103,7 +119,16 @@ const ServicesPage = () => {
         >
           Artificial Intelligence
         </h4>
-        <button>Learn More</button>
+        <h4
+          id="ciBtn"
+          className="bg-[#004450] px-6 py-4  font-bold text-[white] cursor-pointer hover:bg-white hover:text-[#004450]"
+          onMouseOver={clickHandler}
+        >
+         Cloud Native Development
+        </h4>
+        {/* <div className='flex text-[#45C0CE]'>
+    <button className='text-[#45C0CE]'> More</button>
+    <ImArrowRight className='mt-[5px] ml-1'/></div> */}
       </motion.div>
 
       <motion.div
@@ -136,8 +161,9 @@ const ServicesPage = () => {
     <FaReact size={60} color='#81E0FA'/>
     <FaNodeJs size={60} color='#333333'/>
     </div> */}
-        <Image src={img} alt="" />
+        <Image src={img} alt=""  />
       </motion.div>
+    </div>
     </div>
   );
 };

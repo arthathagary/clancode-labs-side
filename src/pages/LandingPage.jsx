@@ -25,13 +25,13 @@ const LandingPage = () => {
         <Slider />
         <ProductDevelpment />
         <MvpSection />
-        <AboutPage />
+        {/* <AboutPage /> */}
 
         {/* <IdeasToStorySection /> */}
         {/* <StoriesToProductSection /> */}
         {/* <OnboardingSection /> */}
         <ServicesPage />
-        <QaSection />
+        {/* <QaSection /> */}
         <GetStartedSection />
         <Footer />
     </div>
