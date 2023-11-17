@@ -3,7 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes,FaArrowRight } from "react-icons/fa";
+
 import Logo from "../../public/assets/images/logo.svg";
 
 const NavBar = () => {
@@ -38,23 +39,18 @@ const NavBar = () => {
           <li className=" p-4 pr-7 hover:text-red-700 hover:scale-105 font-medium ">
             <Link href="/#services">Service</Link>
           </li>
+          <li>
+             <Link href='/contact' className=" hidden group border-none  lg:flex font-medium bg-[#45C1CE] hover:bg-[#3a9fa8] py-3 px-4 rounded-full mt-0  text-[#004450]">
+              <span>Contact Us</span>
+              <span><FaArrowRight className='inline-flex justify-start ml-2  group-hover:translate-x-1 group-hover:duration-300'/></span>
+              </Link> 
+            </li>
           {/* <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 font-medium '><Link href='/'>Portfolio</Link></li>
    <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 font-medium '><Link href='/'>Careers </Link></li>
    <li className=' p-4 pr-7 hover:text-red-700 hover:scale-105 font-medium '><a target="_blank" href="https://mahfoozahamed.medium.com/">Blog</a></li>
    */}
         </ul>
-        <div></div>
-        <div>
-          <button
-            onClick={() => {
-              router.push("/contact");
-            }}
-          >
-            <li className=" hidden border-none  lg:flex group text-xl  md:text-xl font-medium bg-[#45C1CE] hover:bg-[#3a9fa8] py-3 px-4 rounded-full mt-0 md:self-start text-[#004450]">
-              Contact Us
-            </li>
-          </button>
-        </div>
+        
 
         {/* mobile Icons */}
 
@@ -87,12 +83,12 @@ const NavBar = () => {
               <Link href="/#services">Service</Link>
             </li>
             {/* <li  className='p-4 text-2xl hover:text-gray-900   text-white '><Link href="#mvpsection">Portfolio</Link></li>
-   <li  className='p-4 text-2xl hover:text-gray-900   text-white '><Link href="#">Careers</Link></li> */}
+   <li  className='p-4 text-2xl hover:text-gray-900   text-white '><Link href="#">Careers</Link></li>
             <li className="p-4 text-2xl hover:text-gray-900   text-white ">
               <a target="_blank" href="https://mahfoozahamed.medium.com/">
                 Blog
               </a>
-            </li>
+            </li> */}
             <button
               className="lg:flex group text-xl md:text-2xl font-medium bg-[#45C1CE] hover:bg-[#3a9fa8] py-3 px-5 rounded-full mt-2 md:self-start text-[#004450]"
               onClick={() => {
