@@ -1,19 +1,16 @@
 "use client";
-import React, { useState, useEffect, useRef } from "react";
-import { GoStack } from "react-icons/go";
-import { FaAngular, FaReact, FaNodeJs } from "react-icons/fa";
+import { motion, useAnimation, useInView } from "framer-motion";
 import Image from "next/image";
+import { useEffect, useRef, useState } from "react";
 import webAppProjectImg from "../../public/assets/images/Web.webp";
-import AppImg from "../../public/assets/images/app.webp";
 import AiImg from "../../public/assets/images/ai.webp";
-import UxImg from "../../public/assets/images/ui.webp";
+import AppImg from "../../public/assets/images/app.webp";
 import CloudImg from "../../public/assets/images/cloud.webp";
-import { motion, useInView, useAnimation } from "framer-motion";
-import {ImArrowRight } from "react-icons/im"
+import UxImg from "../../public/assets/images/ui.webp";
 
 const ServicesPage = () => {
-  const initialHeading = "Building nothing but the best custom software";
-  const initialPara = "some content about our custom software";
+  const initialHeading = "Unleash your Innovation";
+  const initialPara = "we are your trusted partner in Full Stack Development, offering end-to-end solutions that bring your digital ideas to life. Our team of skilled and experienced developers is dedicated to delivering high-quality, scalable, and innovative web applications.";
 
   const [btnClick, setBtnClick] = useState(true);
   const [heading, setheading] = useState(initialHeading);
@@ -79,7 +76,7 @@ const ServicesPage = () => {
       id="services"
       className="md:h-[85vh] lg:h-[75vh] w-full md:px-32 px-8 md:mt-24 lg:mt-20  items-center  bg-[#DAF3F4] gap-4 py-6 md:py-0 scroll-my-20"
     >
-      <h2 className=" text-center font-bold pt-5 " > Services</h2>
+      <h2 className=" text-center font-bold pt-8"> Services</h2>
       <div className="md:grid grid-cols-3 items-center">
       <motion.div
         variants={{
