@@ -26,7 +26,7 @@ class App extends Component{
     return(
       <div className=" lg:flex grid grid-cols-1 grid-rows-1" >
  
-    <div className=" w-[600px] flex flex-col justify-center max-w-xs mx-auto mb-16 lg:mb-0 bg-[#DAF3F4] h-[400px]   shadow-xl border-yellow-200 rounded-xl  overflow-hidden">
+    <div className=" w-[600px] flex flex-col justify-center max-w-xs mx-auto mb-16 lg:mb-0 bg-[#DAF3F4] h-[300px]   shadow-xl border-yellow-200 rounded-xl  overflow-hidden">
       <Image
         className=" mt-10  object-cover"
         src={Logo1}
@@ -41,7 +41,7 @@ class App extends Component{
       </div>
     </div>
 
-    <div className=" md:w-[600px] flex flex-col justify-center max-w-xs mx-auto mb-16 lg:mb-0 bg-[#DAF3F4] h-[400px] shadow-xl border-yellow-200 rounded-xl  overflow-hidden">
+    <div className=" md:w-[600px] flex flex-col justify-center max-w-xs mx-auto mb-16 lg:mb-0 bg-[#DAF3F4] h-[300px] shadow-xl border-yellow-200 rounded-xl  overflow-hidden">
       <Image
         className="w-[40%] mt-10 ml-[30%] object-cover rounded-3xl"
         src={Logo2}
@@ -56,7 +56,7 @@ class App extends Component{
       </div>
     </div>
 
-    <div className="w-[600px] flex flex-col justify-center items-center max-w-xs mx-auto bg-[#DAF3F4] shadow-xl h-[400px] border-yellow-200 rounded-xl  overflow-hidden">
+    <div className="w-[600px] flex flex-col justify-center items-center max-w-xs mx-auto bg-[#DAF3F4] shadow-xl h-[300px] border-yellow-200 rounded-xl  overflow-hidden">
       <Image
         className="w-[44%] mt-10 object-cover rounded-3xl"
         src={Logo3}
