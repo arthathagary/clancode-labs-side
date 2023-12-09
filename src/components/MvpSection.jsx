@@ -48,8 +48,7 @@ const MvpSection = () => {
         <h3 className="mb-4 text-2xl font-bold">Minimum Value Products</h3>
         <h2 className="font-bold">We bulid lightweight, scalable MVPs</h2>
         <p>
-          We help you to Go-To-Market fast, continue to iterate and scale up
-          while you grow
+          We facilitate you to Go-To-Market fast, enabling ongoing iteration and scalable growth as you expand
         </p>
         {/* <button className="mt-4 text-[#44BFCE]">Explore More</button> */}
       </motion.div>

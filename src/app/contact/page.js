@@ -9,7 +9,7 @@ import Image from 'next/image'
 const page = () => {
   return (
     
-    <div className='width-full overflow-x-hidden bg-white h-[140vh] sm:h-[100vh]'>
+    <form className='width-full overflow-x-hidden bg-white h-[140vh] sm:h-[100vh]'>
         <NavBar/>
 <div className='lg:flex grid grid-col'>
  <div  className='md:mt-40 mt-32  flex flex-col justify-center ml-[5%] sm:ml-[10%] '>
@@ -25,6 +25,7 @@ const page = () => {
     Name
   </label>
   <input
+      required
       className="peer z-10 h-[50px]  lg:w-[200px] w-full border-b border-blue-gray-200 bg-transparent  font-sans text-md font-normal text-black outline outline-0 transition-all placeholder-shown:border-b border-black-50 focus:border-blue focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
       placeholder="Enter The Name "
     />
@@ -43,6 +44,7 @@ const page = () => {
   <label className='mb-2 '>
   E-mail
   </label><input
+  required
       className="peer h-[50px] z-10 lg:w-[200px] w-full border-b border-blue-gray-200 bg-transparent  font-sans text-md font-normal text-black outline outline-0 transition-all placeholder-shown:border-b border-black-50 focus:border-blue focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
       placeholder="Enter Email Address "
     />
@@ -52,6 +54,7 @@ const page = () => {
   <label className='mb-2 '>
   Phone
   </label><input
+  required
       className="peer h-[50px] z-10 lg:w-[200px] w-full border-b   border-blue-gray-200 bg-transparent  font-sans text-md font-normal text-black outline outline-0 transition-all placeholder-shown:border-b border-black-50 focus:border-blue focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
       placeholder="Enter Phone Number "
     />
@@ -62,8 +65,9 @@ const page = () => {
   Your Message
   </label>
   <input
+  required
       className="peer lg:w-[200px]  h-[50px] w-full border-b border-blue-gray-200 bg-transparent  font-sans text-md font-normal text-black outline outline-0 transition-all placeholder-shown:border-b border-black-50 focus:border-blue focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
-      placeholder="Message "
+      placeholder="Message"
     />
  </div>
 
@@ -71,13 +75,13 @@ const page = () => {
 
 
  <div>
- <div className='p-4 ml-[-30px] z-10'>
+ {/* <div className='p-4 ml-[-30px] z-10'>
  <input type="checkbox" className='w-10 z-10 bg-black rounded-md ' id="tickButton" name="tick" value="selected"></input>
  <label htmlFor="tickButton" className='mb-10 z-10 ml-[-5px] '>Subscribe to ClanCodeLabs</label>
- </div>
+ </div> */}
 
  <div className='z-10'>
-  <button className=' py-2 ml-[-10px]  px-[45%] md:px-24 mb-16 mt-4 rounded-lg  accent-black  bg-[#45C1CE] text-black ' > Send</button>
+  <button type='submit' className=' py-2 ml-[-10px]  px-[45%] md:px-24 mb-16 mt-4 rounded-lg  accent-black  bg-[#45C1CE] text-black ' > Send</button>
  </div>
  </div>
  </div>
@@ -92,7 +96,7 @@ const page = () => {
         <Footer className=' z-10'/>
    
    
-    </div>
+    </form>
   )
 }
 

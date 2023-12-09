@@ -1,19 +1,16 @@
 "use client";
-import React, { useState, useEffect, useRef } from "react";
-import { GoStack } from "react-icons/go";
-import { FaAngular, FaReact, FaNodeJs } from "react-icons/fa";
+import { motion, useAnimation, useInView } from "framer-motion";
 import Image from "next/image";
+import { useEffect, useRef, useState } from "react";
 import webAppProjectImg from "../../public/assets/images/Web.webp";
-import AppImg from "../../public/assets/images/app.webp";
 import AiImg from "../../public/assets/images/ai.webp";
-import UxImg from "../../public/assets/images/ui.webp";
+import AppImg from "../../public/assets/images/app.webp";
 import CloudImg from "../../public/assets/images/cloud.webp";
-import { motion, useInView, useAnimation } from "framer-motion";
-import {ImArrowRight } from "react-icons/im"
+import UxImg from "../../public/assets/images/ui.webp";
 
 const ServicesPage = () => {
-  const initialHeading = "Building nothing but the best custom software";
-  const initialPara = "some content about our custom software";
+  const initialHeading = "Unleash your Innovation";
+  const initialPara = "we are your trusted partner in Full Stack Development, offering end-to-end solutions that bring your digital ideas to life. Our team of skilled and experienced developers is dedicated to delivering high-quality, scalable, and innovative web applications.";
 
   const [btnClick, setBtnClick] = useState(true);
   const [heading, setheading] = useState(initialHeading);
@@ -25,34 +22,34 @@ const ServicesPage = () => {
     const currentId = e.target.id;
     switch (currentId) {
       case "sdBtn":
-        setheading("Changed");
-        setPara("Changed Para");
+        setheading("Unleash your Innovation");
+        setPara("we are your trusted partner in Full Stack Development, offering end-to-end solutions that bring your digital ideas to life. Our team of skilled and experienced developers is dedicated to delivering high-quality, scalable, and innovative web applications.");
         setImg(webAppProjectImg);
         break;
 
       case "uiBtn":
-        setheading("ui");
-        setPara("uipara");
+        setheading("Creative UX Transformation");
+        setPara("Where creativity meets functionality. Our UI/UX Design services are crafted to transform your digital presence, creating visually stunning and intuitive user experiences that captivate and engage.");
         setImg(UxImg);
         break;
 
       case "mdBtn":
-        setheading("mobile");
-        setPara("mobilePara");
+        setheading("App Ideas to Reality");
+        setPara("We are your partner in turning mobile app ideas into reality. Our Mobile App Development services are designed to bring seamless, high-performance applications to your users' fingertips.");
         setImg(AppImg);
         break;
 
       case "aiBtn":
-        setheading("ai");
-        setPara("aiPara");
+        setheading("Embark on the Future with ClanCode Labs");
+        setPara("We harness the power of Artificial Intelligence (AI) to revolutionize the way businesses operate and engage with their audiences. Our AI solutions are designed to elevate your capabilities and drive unprecedented growth.");
         setImg(AiImg);
         break;
       default:
         break;
 
         case "ciBtn":
-        setheading("ai");
-        setPara("aiPara");
+        setheading("Scalable Cloud Native Solutions");
+        setPara("we specialize in Cloud Native Development, leveraging the latest technologies to build scalable, resilient, and agile applications that drive your business forward.");
         setImg(CloudImg);
         break;
      
@@ -79,7 +76,7 @@ const ServicesPage = () => {
       id="services"
       className="md:h-[85vh] lg:h-[75vh] w-full md:px-32 px-8 md:mt-24 lg:mt-20  items-center  bg-[#DAF3F4] gap-4 py-6 md:py-0 scroll-my-20"
     >
-      <h2 className=" text-center font-bold pt-5 " > Service Page</h2>
+      <h2 className=" text-center font-bold pt-8"> Services</h2>
       <div className="md:grid grid-cols-3 items-center">
       <motion.div
         variants={{
